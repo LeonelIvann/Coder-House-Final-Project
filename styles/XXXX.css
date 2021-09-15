@@ -1,0 +1,1133 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap"); /* social media icons */
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"); /* Fuente de index Titles */
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Left Menu START*/
+#Menu a {
+  position: fixed;
+  filter: blur(0px);
+  left: -90px;
+  transition: 1.3s;
+  padding: 15px;
+  width: 120px;
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  border-radius: 0 10px 10px 0;
+}
+#Menu a:hover {
+  left: 0;
+}
+#inicio {
+  opacity: 0.8;
+  transition: 2s;
+  top: 20px;
+  background: #b9b9b979;
+  box-shadow: 0 8px 32px 0 rgba(170, 170, 170, 0.329);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+#tienda {
+  opacity: 0.8;
+  transition: 2s;
+  top: 80px;
+  background: #b9b9b979;
+  box-shadow: 0 8px 32px 0 rgba(170, 170, 170, 0.329);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+#equipo {
+  opacity: 0.8;
+  transition: 2s;
+  top: 140px;
+  background: #b9b9b979;
+  box-shadow: 0 8px 32px 0 rgba(170, 170, 170, 0.329);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+#concursos {
+  opacity: 0.8;
+  transition: 2s;
+  top: 200px;
+  background: #b9b9b979;
+  box-shadow: 0 8px 32px 0 rgba(170, 170, 170, 0.329);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+#clubptd {
+  opacity: 0.8;
+  transition: 2s;
+  top: 260px;
+  background: #b9b9b979;
+  box-shadow: 0 8px 32px 0 rgba(170, 170, 170, 0.329);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+.menuSlide {
+  font-family: "Montserrat", sans-serif;
+}
+#inicio:hover {
+  opacity: 1;
+  background: #61616179;
+  box-shadow: 0 8px 32px 0 rgba(88, 88, 88, 0.329);
+  border-radius: 30px 0px 30px 0px;
+}
+#tienda:hover {
+  opacity: 1;
+  background: #61616179;
+  box-shadow: 0 8px 32px 0 rgba(88, 88, 88, 0.329);
+  border-radius: 30px 0px 30px 0px;
+}
+#equipo:hover {
+  opacity: 1;
+  background: #61616179;
+  box-shadow: 0 8px 32px 0 rgba(88, 88, 88, 0.329);
+  border-radius: 30px 0px 30px 0px;
+}
+#concursos:hover {
+  opacity: 1;
+  background: #61616179;
+  box-shadow: 0 8px 32px 0 rgba(88, 88, 88, 0.329);
+  border-radius: 30px 0px 30px 0px;
+}
+#clubptd:hover {
+  opacity: 1;
+  background: #61616179;
+  box-shadow: 0 8px 32px 0 rgba(88, 88, 88, 0.329);
+  border-radius: 30px 0px 30px 0px;
+}
+/* Left menu END*/
+/* Menu responsive zone */
+@media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+  #Menu a {
+  position: absolute;
+  filter: blur(0px);
+  left: 0em;
+  transition: 1.3s;
+  padding: 15px;
+  width: 8em;
+  text-decoration: none;
+  text-align: left;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+  border-radius: 0 10px 10px 0;
+  }
+}
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */   
+  #Menu a {
+  position: fixed;
+  filter: blur(0px);
+  left: 0em;
+  transition: 1.3s;
+  padding: 15px;
+  width: 120px;
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  border-radius: 0 10px 10px 0;
+  }
+}
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+  #Menu a {
+  position: fixed;
+  filter: blur(0px);
+  left: 0em;
+  transition: 1.3s;
+  padding: 15px;
+  width: 120px;
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  border-radius: 0 10px 10px 0;
+  }
+}
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+  #Menu a {
+  position: fixed;
+  filter: blur(0px);
+  left: 0em;
+  transition: 1.3s;
+  padding: 15px;
+  width: 120px;
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  border-radius: 0 10px 10px 0;
+  }
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+#Menu a {
+  position: fixed;
+  display: flex;
+  filter: blur(0px);
+  left: -70px;
+  transition: 1.3s;
+  padding: 15px;
+  width: 150px;
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  border-radius: 0 10px 10px 0;
+  }
+}
+@media (min-width:1281px) { /* hi-res laptops and desktops */ 
+  .flexContainerIndex{
+  display: flex;
+  flex-direction: column;
+  font-family: "Playfair Display", serif;
+}
+.gridTitleSup{
+  width: fit-content;
+  margin-top: 43vh;
+  margin-left: 50vw;
+  /* font-size: 9rem; */
+}
+.gridTitleInf{
+  width: fit-content;
+  margin-left: 50vw;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Efecto "Pide tres deseos" */
+.gridTexInf {
+  display: inline-block;
+  position: relative;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  transform-style: preserve-3d;
+}
+.gridTexInf:after {
+  content: "¡Vamos!";
+  position: absolute;
+  top: -100%;
+  left: 0px;
+  width: 100%;
+  transform-origin: left bottom;
+  transform: rotateX(90deg);
+}
+.gridTexInf:hover {
+  transform-origin: center bottom;
+  transform: rotateX(-90deg) translateY(100%);
+}
+}
+/* Responsive index */
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ 
+.gridTextSup{
+  position: absolute;
+  font-size: 1.75em;
+  margin-top: 150px;
+  margin-left: -90px;
+  width: max-content;
+  }
+.gridTexInf{
+  position: absolute;
+  font-size: 1.75em;
+  margin-top: 182px;
+  margin-left: -90px;
+  width: max-content;
+  }
+}
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+  .gridTitleSup{
+    font-size: 1.2em;
+    margin-top: 45%;
+    margin-left: 40%;
+    width: max-content;
+  }
+  .gridTitleInf{
+    font-size: 1.75em;
+    margin-top: 53%;
+    margin-left: 40%;
+    width: max-content;
+  }
+}
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+  .gridTitleSup{
+    font-size: 1.8em;
+    margin-top: 10%;
+    margin-left: 45%;
+    width: max-content;
+  }
+  .gridTitleInf{
+    font-size: 1.75em;
+    margin-top: 3.3%;
+    margin-left: 45%;
+    width: max-content;
+  }
+}
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+  .gridTitleSup{
+    font-size: 1.8em;
+    margin-top: 1%;
+    margin-left: 45%;
+    width: max-content;
+  }
+  .gridTitleInf{
+    font-size: 1.75em;
+    margin-top: 3%;
+    margin-left: 45%;
+    width: max-content;
+  }
+}
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ 
+  .gridTitleSup{
+    font-size: 3.1em;
+    margin-top: 8%;
+    margin-left: 45%;
+    width: max-content;
+  }
+  .gridTitleInf{
+    font-size: 3em;
+    margin-top: 3.5%;
+    margin-left: 45%;
+    width: max-content;
+  }
+}
+
+/*=============================== */
+/*======= INDEX    END   ======== */
+/*=============================== */
+
+/*=============================== */
+/*======= INICIO   START ======== */
+/*=============================== */
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+/* 
+.inicioGrid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 0px;
+}
+
+.boxVideoGrid {
+  grid-area: 3 / 6 / 8 / 8;
+}
+.boxSliderGrid {
+  grid-area: 3 / 2 / 7 / 5;
+}
+.boxSliderTitle {
+  grid-area: 2 / 2 / 3 / 5;
+}
+.boxVideoTitle {
+  grid-area: 2 / 6 / 3 / 8;
+}
+.footerGridInicio {
+  grid-area: 8 / 1 / 9 / 9;
+}
+
+.boxSliderTitle {
+  display: flex;
+}
+.boxVideoTitle {
+  display: flex;
+}
+.boxVideoGrid {
+  display: flex;
+}
+.productsBestSeller {
+  height: fit-content;
+  font-size: 3.8rem;
+  margin-top: 10%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  padding: 5px;
+  border-radius: 8px;
+  width: 100%;
+}
+.bestSellerTittle{  
+  font-family: "Playfair Display", serif;
+}
+.nextProduct {
+  height: fit-content;
+  font-size: 2.8rem;
+  margin-top: 16%;
+  width: 65vw;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  padding: 5px;
+  border-radius: 8px;
+}
+.fondoSlider {
+  border-radius: 5px;
+  box-shadow: 10px 10px 32px 10px rgba(0, 0, 0, 0.425);
+}
+.boxVideoGridShadow {
+  border-radius: 5px;
+  box-shadow: 10px 10px 32px 10px rgba(0, 0, 0, 0.425);
+  height: 77.6vh;
+}
+.boxSliderGrid {
+  filter: sepia(5);
+  transition: 1500ms;
+  opacity: 0.7;
+}
+.boxSliderGrid:hover {
+  filter: sepia(0);
+  opacity: 1;
+  transition: 1500ms;
+}
+.boxVideoGrid {
+  filter: sepia(5);
+  transition: 1500ms;
+  opacity: 0.7;
+}
+.boxVideoGrid:hover {
+  filter: sepia(0);
+  opacity: 1;
+  transition: 1500ms;
+} */
+
+.gridInicio {
+  display: grid;
+  grid-template-columns: 100px repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 8px;
+  }
+  
+  .sectionGrid { grid-area: 2 / 2 / 7 / 7; }
+  .headerGrid { grid-area: 1 / 2 / 2 / 7; }
+
+.gridInicio{
+  height: 100vh;
+}
+.sectionGrid{
+  display: flex;
+  height: 75vh;
+}
+.backgroundHeader{
+  position: absolute;
+  left: 0%;
+  z-index: -1;
+  width: 100vw;
+  height: 10vh;
+}
+.headerGrid{
+  display: flex;
+  height: 20vh;
+  width: 100vw;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.sliderFlex{   /* Slider de fotos */
+  margin-top: 10%;
+  margin-left: 5%;
+  width: 25vw;
+}
+.headerTitle1{   /* Titulo izquierdo (Slider) */
+  position: absolute; 
+  margin-left: 9%;
+  margin-top: 6%;
+  height: fit-content;
+  width: fi-content;
+  font-size: 1.5rem;
+}
+.headerTitle2{   /* Titulo derecho (Video) */  
+  position: absolute;
+  margin-left: 60%;
+  margin-top: 6%;
+  height: fit-content;
+  width: fi-content;
+  font-size: 1.5rem;
+}
+.sectionVideo{   /* Video inicio derecho */
+  margin-top: 9%;
+  margin-left: 30%;
+}
+
+
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+
+
+
+
+
+
+/*=============================== */
+/*======= INICIO  END    ======== */
+/*=============================== */
+
+/*=============================== */
+/*======= TIENDA  START  ======== */
+/*=============================== */
+.tiendaGrid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 0px;
+}
+
+.tiendaGrid{
+  z-index: -1;
+  /* margin-top: 40vh; */
+}
+.headerDiv1 {
+  grid-area: 1 / 1 / 3 / 9;
+}
+.marketplaceDiv2 {
+  grid-area: 3 / 2 / 9 / 9;
+}
+.product1 {
+  grid-area: 4 / 3 / 6 / 4;
+}
+.product2 {
+  grid-area: 6 / 3 / 8 / 4;
+}
+.product3 {
+  grid-area: 6 / 5 / 8 / 6;
+}
+.product4 {
+  grid-area: 4 / 5 / 6 / 6;
+}
+.product5 {
+  grid-area: 6 / 7 / 8 / 8;
+}
+.product6 {
+  grid-area: 4 / 7 / 6 / 8;
+}
+.footerGrid {
+  grid-area: 8 / 1 / 9 / 9;
+}
+
+/*===   Fuente TIENDA    ===*/
+.tiendaGrid {
+  grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+  font-family: "Montserrat", sans-serif;
+}
+/*===   HEADER TIENDA START   ===*/
+.headerDiv1 {
+  width: 100vw;
+  height: max-content;
+}
+
+.headerTitle {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 42%;
+  margin-top: 1%;
+  width: max-content;
+  height: min-content;
+  padding: 12px;
+  font-size: 1.2rem;
+  background: rgba(221, 221, 221, 0.233);
+  box-shadow: 0px 0px 20px 0 rgba(255, 255, 255, 0.267);
+  text-decoration: none;
+}
+.buttonHeader {
+  color: black;
+  text-decoration: none;
+  transition: 1500ms;
+}
+.buttonHeader:hover {
+  transition: 1500ms;
+  color: rgb(236, 39, 105);
+}
+/*===   TIENDA SECTION START  ===*/
+.marketplaceDiv2 {
+  height: 105vh;
+}
+.productsFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: wrap;
+  margin-top: 10vh;
+}
+.pricesAndButton {
+  margin-top: 1%;
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  text-align: center;
+  padding: 3%;
+}
+.pricesShadow {
+  border-radius: 6%;
+  transition: 320ms;
+  padding: 10px;
+}
+.pricesShadow:hover {
+  border-radius: 6%;
+  padding: 10px;
+  transition: 320ms;
+}
+.btnComprarShadow {
+  color: black;
+  text-decoration: none;
+  border-radius: 6%;
+  padding: 10px;
+  transition: 1500ms;
+}
+.product1 {
+  padding: 9px;
+  transition: 1s;
+  backdrop-filter: blur(6px);
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+.imgProduct1 {
+  border-radius: 4%;
+}
+.product2 {
+  padding: 9px;
+  transition: 1s;
+  backdrop-filter: blur(6px);
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+.imgProduct2 {
+  border-radius: 4%;
+}
+.product3 {
+  padding: 9px;
+  transition: 1s;
+  backdrop-filter: blur(6px);
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+.imgProduct3 {
+  border-radius: 4%;
+}
+.product4 {
+  padding: 9px;
+  transition: 1s;
+  backdrop-filter: blur(6px);
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+.imgProduct4 {
+  border-radius: 4%;
+}
+.product5 {
+  padding: 9px;
+  transition: 1s;
+  backdrop-filter: blur(6px);
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+.imgProduct5 {
+  border-radius: 4%;
+}
+.product6 {
+  padding: 9px;
+  transition: 1s;
+  backdrop-filter: blur(6px);
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+.imgProduct6 {
+  border-radius: 4%;
+}
+.product1:hover {
+  font-size: 1rem;
+  transform: scale(1.05);
+  border-radius: 4%;
+  background: rgba(221, 221, 221, 0.274);
+  box-shadow: 8px 8px 32px 0 rgba(255, 255, 255, 0.267);
+  backdrop-filter: blur(6px);
+  padding: 5px;
+  transition: 1.5s;
+  opacity: 1;
+}
+.product2:hover {
+  font-size: 1rem;
+  transform: scale(1.05);
+  border-radius: 6%;
+  background: rgba(221, 221, 221, 0.274);
+  box-shadow: 8px 8px 32px 0 rgba(255, 255, 255, 0.267);
+  backdrop-filter: blur(6px);
+  padding: 9px;
+  transition: 1.5s;
+  opacity: 1;
+}
+.product3:hover {
+  font-size: 1rem;
+  transform: scale(1.05);
+  border-radius: 6%;
+  background: rgba(221, 221, 221, 0.274);
+  box-shadow: 8px 8px 32px 0 rgba(255, 255, 255, 0.267);
+  backdrop-filter: blur(6px);
+  padding: 9px;
+  transition: 1.5s;
+  opacity: 1;
+}
+.product4:hover {
+  font-size: 1rem;
+  transform: scale(1.05);
+  border-radius: 6%;
+  background: rgba(221, 221, 221, 0.274);
+  box-shadow: 8px 8px 32px 0 rgba(255, 255, 255, 0.267);
+  backdrop-filter: blur(6px);
+  padding: 9px;
+  transition: 1.5s;
+  opacity: 1;
+}
+.product5:hover {
+  font-size: 1rem;
+  transform: scale(1.05);
+  border-radius: 6%;
+  background: rgba(221, 221, 221, 0.274);
+  box-shadow: 8px 8px 32px 0 rgba(255, 255, 255, 0.267);
+  backdrop-filter: blur(6px);
+  padding: 9px;
+  transition: 1.5s;
+  opacity: 1;
+}
+.product6:hover {
+  font-size: 1rem;
+  transform: scale(1.05);
+  border-radius: 6%;
+  background: rgba(221, 221, 221, 0.274);
+  box-shadow: 8px 8px 32px 0 rgba(255, 255, 255, 0.267);
+  backdrop-filter: blur(6px);
+  padding: 9px;
+  transition: 1.5s;
+  opacity: 1;
+}
+.product1 {
+  width: min-content;
+}
+.product2 {
+  width: min-content;
+}
+.product3 {
+  width: min-content;
+}
+.product4 {
+  width: min-content;
+}
+.product5 {
+  width: min-content;
+}
+.product6 {
+  width: min-content;
+}
+
+/*=============================== */
+/*======= TIENDA  END =========== */
+/*=============================== */
+
+
+/*=============================== */
+/*======= Concursos START ======= */
+/*=============================== */
+
+.concursoGrid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 0px;
+}
+
+.concursoTitle {
+  grid-area: 1 / 3 / 2 / 7;
+}
+.concursoFooter {
+  grid-area: 8 / 1 / 9 / 9;
+}
+.concursoPlaces {
+  grid-area: 2 / 2 / 8 / 8;
+}
+
+.concursoGrid {
+  display: grid;
+}
+.concursoTitle {
+  display: flex;
+  width: 74vw;
+  height: 10vh;
+}
+.concursoTitle1 {
+  margin-top: 10%;
+  text-align: center;
+  font-size: 2.3rem;
+  margin-left: 30%;
+  font-family: "Fredericka the Great", cursive;
+}
+.concursoPlaces {
+  display: flex;
+  width: 86vw;
+  height: 60vh;
+  height: fit-content;
+  margin-top: 10%;
+}
+.concursoGrid1 {
+  margin-top: 20vh;
+}
+.concursoGrid2 {
+  height: fit-content;
+}
+.concursoGrid3 {
+  height: fit-content;
+}
+.concursoFooter {
+  display: flex;
+  position: absolute;
+  z-index: -1;
+}
+
+/* Animación de tarjetas */
+.participateButton{
+  text-decoration: none;
+  color: black;
+}
+.tarjetas {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tarjeta {
+  width: 20vw;
+  margin: 1rem;
+
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+.tarjeta .frontal,
+.tarjeta .tracero {
+  height: auto;
+  min-height: 30vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 8px 8px 32px 0 rgba(88, 88, 88, 0.452);
+  font-size: 1.5rem;
+  text-align: center;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+.tarjeta .frontal {
+  transform: rotateY(0deg);
+}
+.imgFrontal1 {
+  background-image: url(/img/concursos/1.jpg);
+}
+.tarjetaText1 {
+  background: rgba(255, 255, 255, 0.26);
+  box-shadow: 8px 8px 32px 0 rgba(221, 221, 221, 0.267);
+  backdrop-filter: blur(5px);
+}
+.imgFrontal2 {
+  background-image: url(/img/concursos/2.jpg);
+}
+.tarjetaText2 {
+  background: rgba(255, 255, 255, 0.26);
+  box-shadow: 8px 8px 32px 0 rgba(221, 221, 221, 0.267);
+  backdrop-filter: blur(5px);
+}
+.imgFrontal3 {
+  background-image: url(/img/concursos/3.jpg);
+}
+.tarjetaText3 {
+  background: rgba(255, 255, 255, 0.26);
+  box-shadow: 8px 8px 32px 0 rgba(221, 221, 221, 0.267);
+  backdrop-filter: blur(5px);
+}
+.imgFrontal4 {
+  background-image: url(/img/concursos/4.jpg);
+}
+.tarjetaText4 {
+  background: rgba(255, 255, 255, 0.26);
+  box-shadow: 8px 8px 32px 0 rgba(221, 221, 221, 0.267);
+  backdrop-filter: blur(5px);
+}
+.imgFrontal5 {
+  background-image: url(/img/concursos/5.jpg);
+}
+.tarjetaText5 {
+  background: rgba(255, 255, 255, 0.26);
+  box-shadow: 8px 8px 32px 0 rgba(221, 221, 221, 0.267);
+  backdrop-filter: blur(5px);
+}
+.imgFrontal6 {
+  background-image: url(/img/concursos/6.jpg);
+}
+.tarjetaText6 {
+  background: rgba(255, 255, 255, 0.26);
+  box-shadow: 8px 8px 32px 0 rgba(221, 221, 221, 0.267);
+  backdrop-filter: blur(5px);
+}
+.tarjeta .tracero {
+  width: 100%;
+
+  background-color: #3838383d;
+  box-shadow: 8px 8px 32px 0 rgba(88, 88, 88, 0.452);
+
+  top: 0;
+  left: 0;
+  position: absolute;
+  /* Posicion por defecto */
+  transform: rotateY(180deg);
+}
+/* Velocidad de trancicion */
+.tarjeta:hover .frontal,
+.tarjeta:hover .tracero {
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+/* Girar imagen */
+.tarjeta:hover .frontal {
+  transform: rotateY(-180deg);
+}
+.tarjeta:hover .tracero {
+  transform: rotateY(0deg);
+}
+
+.tarjeta .contenido {
+  width: 100%;
+  position: absolute;
+
+  padding: 2rem;
+  box-sizing: border-box;
+
+  top: 50%;
+  left: 0;
+  perspective: inherit;
+  /* Posicion de texto central */
+  transform: translateY(-50%) translateZ(60px) scale(0.94);
+}
+.frontal .contenido p {
+  font-size: 2rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.frontal .contenido hr {
+  width: 10rem;
+  height: 1px;
+
+  background: #c6d4df;
+
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+.frontal .contenido span {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Countdown de la tarjetas */
+#countdown {
+  position: absolute;
+  background: #e85810;
+  width: 12vw;
+  padding: 1em;
+  box-sizing: border-box;
+  border-radius: 1em;
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+}
+#countdown i {
+  font-size: 1em;
+}
+
+/* Concursos END  */
+/* Equipo START */
+/* .gridEquipo {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.divImage1 {
+  grid-area: 2 / 4 / 6 / 6;
+}
+.divTitle2 {
+  grid-area: 1 / 4 / 2 / 6;
+}
+.divTitle3 {
+  grid-area: 1 / 2 / 2 / 4;
+}
+.divTexto3 {
+  grid-area: 2 / 2 / 3 / 4;
+}
+.divTitle4 {
+  grid-area: 3 / 2 / 4 / 4;
+}
+.divTexto4 {
+  grid-area: 4 / 2 / 6 / 4;
+}
+.div7 {
+  grid-area: 1 / 1 / 7 / 2;
+}
+.gridEquipo{
+  background-color: grey;
+  position: absolute;
+  width: 100vw;
+}
+.divTitle2 {
+  position: absolute;
+  margin-top: 46vh;
+  margin-left: 51vw;
+  display: grid;
+}
+.divTitle2-2 {
+  margin-bottom: -4vh;
+  text-align: center;
+  height: fit-content;
+  width: 24vw;
+  grid-row-end: 4;
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+}
+.divTitle3 {
+  position: absolute;
+  margin-left: 60vw;
+  margin-top: 12vh;
+  display: grid;
+}
+.divTitle3-3 {
+  margin-bottom: -4vh;
+  text-align: center;
+  height: fit-content;
+  width: 30vw;
+  grid-row-end: 4;
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+}
+.divTexto3 {
+  width: 30vw;
+  position: absolute;
+  margin-left: 62.8vw;
+  margin-top: 18vh;
+  display: grid;
+}
+.divTexto3-3 {
+  text-align: left;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+}
+.divTitle4 {
+  margin-top: 20vh;
+  margin-left: 20vw;
+  position: absolute;
+  display: grid;
+}
+.divTitle4-4 {
+  margin-bottom: -4vh;
+  text-align: center;
+  height: fit-content;
+  width: 30vw;
+  grid-row-end: 4;
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+}
+.divTexto4 {
+  width: 30vw;
+  margin-top: 26vh;
+  margin-left: 21.8vw;
+  position: absolute;
+  display: grid;
+}
+.divTexto4-4 {
+  text-align: left;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+}
+.divImage1 {
+  position: absolute;
+  margin-left: 25vw;
+  margin-top: 52vh;
+}
+.div7 {
+  width: fit-content;
+} */
+
+/* 
+.teamFlex{
+  display: flex;
+  background-color: grey;
+  flex-direction: row;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.teamFlex1{
+  background-color: rosybrown;
+}
+.teamFlex2{
+  background-color: rgb(99, 75, 75);
+}
+.teamFlex3{
+  background-color: rgb(61, 72, 230);
+}
+
+
+
+ */
+
+
+.HozScroll {
+  width: 600%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* A N I M A C I O N     Z O N E   START*/
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate__bounceInLeft,
+.animate__bounceInRight {
+  animation: bounce;
+  animation-duration: 6s;
+}
+
+.animate__backInUp,
+.animate__backInDown,
+.animate__backInLeft {
+  animation: bounce;
+  animation-duration: 4s;
+}
+
+/* A N I M A C I O N     Z O N E   END*/

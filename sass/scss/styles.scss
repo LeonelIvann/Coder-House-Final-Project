@@ -1,10 +1,13 @@
 @import "../fonts";
 @import "../libs/bootstrap/scss/bootstrap";
+@import "../scss/socialMedia";
 /* Social media Icons */
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
 /*========= Colores =============*/
-$WhiteT: rgba(255, 255, 255, 0.541); 
+$WhiteT: rgba(255, 255, 255, 0.541);
+$ModalBackdrop: rgba(255, 255, 255, 0.274);
+$ModalBackdrop2: rgba(209, 135, 135, 0.466);
 $GreyFooter: rgba(53, 53, 53, 0.541);
 $IntroIcons: rgb(209, 209, 209);
 
@@ -12,6 +15,7 @@ $IntroIcons: rgb(209, 209, 209);
     box-shadow: 0px 0px 13px 0px $WhiteT;
     background-color: $WhiteT;
     border: $WhiteT;
+    margin-top: 50%;
     backdrop-filter: blur(6px);
 }
 .footer_Index{
@@ -19,6 +23,10 @@ $IntroIcons: rgb(209, 209, 209);
     height: 45px;
     margin-top: 20%;
     background-color: $GreyFooter;
+}
+.modal { 
+    background-color: $ModalBackdrop;
+    backdrop-filter: blur(5px);
 }
 
 /* Left Menu START*/
@@ -127,6 +135,8 @@ $IntroIcons: rgb(209, 209, 209);
         display: flex;
         flex-direction: column;
         font-family: "Playfair Display", serif;
+        height: 100vh;
+        background-color: #d18fb0;
     }
     .gridTitleSup {
         width: fit-content;
@@ -182,9 +192,9 @@ $IntroIcons: rgb(209, 209, 209);
             justify-content: space-between;
             flex-direction: column;
             align-items: center;
-            margin-top: 40%;
             margin-left: 10%;
-            z-index: -1;
+            height: 100vh;
+            background-color: #a84242;
         }
         .section_flex_slider{
             width: 80vw;
@@ -238,6 +248,187 @@ $IntroIcons: rgb(209, 209, 209);
             letter-spacing: 2px;
         }
         /* Club section end */
+        /* Tienda section start */
+        .tiendaGrid {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            grid-column-gap: 15px;
+            grid-row-gap: 0px;
+        }
+        .tiendaGrid{
+            z-index: -1;
+            /* margin-top: 40vh; */
+        }
+        .headerDiv1 {
+            grid-area: 1 / 1 / 3 / 9;
+        }
+        .product1 {
+            grid-area: 4 / 3 / 6 / 4;
+        }
+        .product2 {
+            grid-area: 6 / 3 / 8 / 4;
+        }
+        .product3 {
+            grid-area: 6 / 5 / 8 / 6;
+        }
+        .product4 {
+            grid-area: 4 / 5 / 6 / 6;
+        }
+        .product5 {
+            grid-area: 6 / 7 / 8 / 8;
+        }
+        .product6 {
+            grid-area: 4 / 7 / 6 / 8;
+        }
+        .footerGrid {
+            grid-area: 8 / 1 / 9 / 9;
+        }
+        .tiendaGrid {
+            margin-left: 5vw;
+            font-family: "Montserrat", sans-serif;
+        }
+        .marketplaceDiv2{
+            width: fit-content;
+        }
+        .headerDiv1 {
+            width: 80vw;
+            height: fit-content;
+            margin-left: 5%;
+        }
+        .headerTitle {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-top: 1%;
+            height: min-content;
+            padding: 12px;
+            font-size: 1.2rem;
+            background: rgba(221, 221, 221, 0.233);
+            box-shadow: 0px 0px 20px 0 rgba(255, 255, 255, 0.267);
+            text-decoration: none;
+        }
+        .headerText{
+            background: indianred;
+        }
+        .buttonHeader {
+            color: black;
+            text-decoration: none;
+        }
+        .productsFlex {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-flow: wrap;
+            margin-top: 10vh;
+            margin-left: 5vw;
+        }
+        .pricesAndButton {
+            margin-top: 1%;
+            text-decoration: none;
+            color: #333;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            text-align: center;
+            padding: 3%;
+        }
+        .pricesShadow {
+            border-radius: 6%;
+            transition: 320ms;
+            padding: 10px;
+        }
+        .btnComprarShadow {
+            color: black;
+            text-decoration: none;
+            border-radius: 6%;
+            padding: 10px;
+            transition: 1500ms;
+        }
+        .product1 {
+            padding: 9px;
+            transition: 1s;
+            backdrop-filter: blur(6px);
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        .imgProduct1 {
+            border-radius: 4%;
+            width: 80vw;
+        }
+        .product2 {
+            padding: 9px;
+            transition: 1s;
+            backdrop-filter: blur(6px);
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        .imgProduct2 {
+            border-radius: 4%;
+            width: 80vw;
+        }
+        .product3 {
+            padding: 9px;
+            transition: 1s;
+            backdrop-filter: blur(6px);
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        .imgProduct3 {
+            border-radius: 4%;
+            width: 80vw;
+        }
+        .product4 {
+            padding: 9px;
+            transition: 1s;
+            backdrop-filter: blur(6px);
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        .imgProduct4 {
+            border-radius: 4%;
+            width: 80vw;
+        }
+        .product5 {
+            padding: 9px;
+            transition: 1s;
+            backdrop-filter: blur(6px);
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        .imgProduct5 {
+            border-radius: 4%;
+            width: 80vw;
+        }
+        .product6 {
+            padding: 9px;
+            transition: 1s;
+            backdrop-filter: blur(6px);
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        .imgProduct6 {
+            border-radius: 4%;
+            width: 80vw;
+        }
+        .product1 {
+            width: min-content;
+        }
+        .product2 {
+            width: min-content;
+        }
+        .product3 {
+            width: min-content;
+        }
+        .product4 {
+            width: min-content;
+        }
+        .product5 {
+            width: min-content;
+        }
+        .product6 {
+            width: min-content;
+        }
     }
     @media (min-width: 426px) and (max-width: 768px){
         /* Index Section start */
@@ -323,6 +514,189 @@ $IntroIcons: rgb(209, 209, 209);
             width: 100%;
             margin-bottom: auto;
         }
+        /* Tienda section start */
+        .tiendaGrid {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            grid-column-gap: 15px;
+            grid-row-gap: 0px;
+        }
+        .tiendaGrid{
+            z-index: -1;
+            /* margin-top: 40vh; */
+        }
+        .headerDiv1 {
+            grid-area: 1 / 1 / 3 / 9;
+        }
+        .marketplaceDiv2 {
+            margin-left: 5%;
+            grid-area: 1 / 1 / 9 / 9;
+        }
+        .product1 {
+            grid-area: 4 / 3 / 6 / 4;
+        }
+        .product2 {
+            grid-area: 6 / 3 / 8 / 4;
+        }
+        .product3 {
+            grid-area: 6 / 5 / 8 / 6;
+        }
+        .product4 {
+            grid-area: 4 / 5 / 6 / 6;
+        }
+        .product5 {
+            grid-area: 6 / 7 / 8 / 8;
+        }
+        .product6 {
+            grid-area: 4 / 7 / 6 / 8;
+        }
+        .footerGrid {
+            grid-area: 8 / 1 / 9 / 9;
+        }
+        .tiendaGrid {
+            grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+            font-family: "Montserrat", sans-serif;
+        }
+        .headerDiv1 {
+            width: 100vw;
+            height: max-content;
+        }
+        .headerTitle {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-left: 32%;
+            margin-top: 1%;
+            width: 60vw;
+            padding: 12px;
+            font-size: 1.2rem;
+            background: rgba(221, 221, 221, 0.233);
+            box-shadow: 0px 0px 20px 0 rgba(255, 255, 255, 0.267);
+            text-decoration: none;
+        }
+        .buttonHeader {
+            color: black;
+            text-decoration: none;
+        }
+        .marketplaceDiv2 {
+            height: 105vh;
+        }
+        .productsFlex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-flow: wrap;
+            margin-top: 28%;
+        }
+        .pricesAndButton {
+            margin-top: 1%;
+            text-decoration: none;
+            color: #333;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            text-align: center;
+            padding: 3%;
+        }
+        .pricesShadow {
+            border-radius: 6%;
+            transition: 320ms;
+            padding: 10px;
+        }
+        .btnComprarShadow {
+            color: black;
+            text-decoration: none;
+            border-radius: 6%;
+            padding: 10px;
+            transition: 1500ms;
+        }
+        .product1 {
+            padding: 9px;
+            transition: 1s;
+            backdrop-filter: blur(6px);
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        .imgProduct1 {
+            border-radius: 4%;
+            width: 85vw;
+        }
+        .product2 {
+            padding: 9px;
+            transition: 1s;
+            backdrop-filter: blur(6px);
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        .imgProduct2 {
+            border-radius: 4%;
+            width: 85vw;
+        }
+        .product3 {
+            padding: 9px;
+            transition: 1s;
+            backdrop-filter: blur(6px);
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        .imgProduct3 {
+            border-radius: 4%;
+            width: 85vw;
+        }
+        .product4 {
+            padding: 9px;
+            transition: 1s;
+            backdrop-filter: blur(6px);
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        .imgProduct4 {
+            border-radius: 4%;
+            width: 85vw;
+        }
+        .product5 {
+            padding: 9px;
+            transition: 1s;
+            backdrop-filter: blur(6px);
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        .imgProduct5 {
+            border-radius: 4%;
+            width: 85vw;
+        }
+        .product6 {
+            padding: 9px;
+            transition: 1s;
+            backdrop-filter: blur(6px);
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        .imgProduct6 {
+            border-radius: 4%;
+            width: 85vw;
+        }
+        .product1 {
+            width: min-content;
+        }
+        .product2 {
+            width: min-content;
+        }
+        .product3 {
+            width: min-content;
+        }
+        .product4 {
+            width: min-content;
+        }
+        .product5 {
+            width: min-content;
+        }
+        .product6 {
+            width: min-content;
+        }
+
     }
     @media (min-width: 769px) and (max-width: 1024px){
         /* Index Section start */
@@ -420,6 +794,261 @@ $IntroIcons: rgb(209, 209, 209);
             width: 100%;
             margin-bottom: auto;
         }
+        /* Tienda section start */
+        .tiendaGrid {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            grid-column-gap: 15px;
+            grid-row-gap: 0px;
+        }
+        .tiendaGrid{
+            z-index: -1;
+            /* margin-top: 40vh; */
+        }
+        .headerDiv1 {
+            grid-area: 1 / 1 / 3 / 9;
+        }
+        .marketplaceDiv2 {
+            grid-area: 3 / 2 / 9 / 9;
+        }
+        .product1 {
+            grid-area: 4 / 3 / 6 / 4;
+        }
+        .product2 {
+            grid-area: 6 / 3 / 8 / 4;
+        }
+        .product3 {
+            grid-area: 6 / 5 / 8 / 6;
+        }
+        .product4 {
+            grid-area: 4 / 5 / 6 / 6;
+        }
+        .product5 {
+            grid-area: 6 / 7 / 8 / 8;
+        }
+        .product6 {
+            grid-area: 4 / 7 / 6 / 8;
+        }
+        .footerGrid {
+            grid-area: 8 / 1 / 9 / 9;
+        }
+        /*===   Fuente TIENDA    ===*/
+        .tiendaGrid {
+            grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+            font-family: "Montserrat", sans-serif;
+        }
+        /*===   HEADER TIENDA START   ===*/
+        .headerDiv1 {
+            width: 100vw;
+            height: max-content;
+        }
+        .headerTitle {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-left: 42%;
+            margin-top: 1%;
+            width: max-content;
+            height: min-content;
+            padding: 12px;
+            font-size: 1.2rem;
+            background: rgba(221, 221, 221, 0.233);
+            box-shadow: 0px 0px 20px 0 rgba(255, 255, 255, 0.267);
+            text-decoration: none;
+        }
+        .buttonHeader {
+            color: black;
+            text-decoration: none;
+            transition: 1500ms;
+        }
+        .buttonHeader:hover {
+            transition: 1500ms;
+            color: rgb(236, 39, 105);
+        }
+        /*===   TIENDA SECTION START  ===*/
+        .marketplaceDiv2 {
+            height: 105vh;
+        }
+        .productsFlex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-flow: wrap;
+            margin-top: 10vh;
+        }
+        .pricesAndButton {
+            margin-top: 1%;
+            text-decoration: none;
+            color: #333;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            text-align: center;
+            padding: 3%;
+        }
+        .pricesShadow {
+            border-radius: 6%;
+            transition: 320ms;
+            padding: 10px;
+        }
+        .pricesShadow:hover {
+            border-radius: 6%;
+            padding: 10px;
+            transition: 320ms;
+        }
+        .btnComprarShadow {
+            color: black;
+            text-decoration: none;
+            border-radius: 6%;
+            padding: 10px;
+            transition: 1500ms;
+        }
+        .product1 {
+            padding: 9px;
+            transition: 1s;
+            backdrop-filter: blur(6px);
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        .imgProduct1 {
+            border-radius: 4%;
+        }
+        .product2 {
+            padding: 9px;
+            transition: 1s;
+            backdrop-filter: blur(6px);
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        .imgProduct2 {
+            border-radius: 4%;
+        }
+        .product3 {
+            padding: 9px;
+            transition: 1s;
+            backdrop-filter: blur(6px);
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        .imgProduct3 {
+            border-radius: 4%;
+        }
+        .product4 {
+            padding: 9px;
+            transition: 1s;
+            backdrop-filter: blur(6px);
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        .imgProduct4 {
+            border-radius: 4%;
+        }
+        .product5 {
+            padding: 9px;
+            transition: 1s;
+            backdrop-filter: blur(6px);
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        .imgProduct5 {
+            border-radius: 4%;
+        }
+        .product6 {
+            padding: 9px;
+            transition: 1s;
+            backdrop-filter: blur(6px);
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        .imgProduct6 {
+            border-radius: 4%;
+        }
+        .product1:hover {
+            font-size: 1rem;
+            transform: scale(1.05);
+            border-radius: 4%;
+            background: rgba(221, 221, 221, 0.274);
+            box-shadow: 8px 8px 32px 0 rgba(255, 255, 255, 0.267);
+            backdrop-filter: blur(6px);
+            padding: 5px;
+            transition: 1.5s;
+            opacity: 1;
+        }
+        .product2:hover {
+            font-size: 1rem;
+            transform: scale(1.05);
+            border-radius: 6%;
+            background: rgba(221, 221, 221, 0.274);
+            box-shadow: 8px 8px 32px 0 rgba(255, 255, 255, 0.267);
+            backdrop-filter: blur(6px);
+            padding: 9px;
+            transition: 1.5s;
+            opacity: 1;
+        }
+        .product3:hover {
+            font-size: 1rem;
+            transform: scale(1.05);
+            border-radius: 6%;
+            background: rgba(221, 221, 221, 0.274);
+            box-shadow: 8px 8px 32px 0 rgba(255, 255, 255, 0.267);
+            backdrop-filter: blur(6px);
+            padding: 9px;
+            transition: 1.5s;
+            opacity: 1;
+        }
+        .product4:hover {
+            font-size: 1rem;
+            transform: scale(1.05);
+            border-radius: 6%;
+            background: rgba(221, 221, 221, 0.274);
+            box-shadow: 8px 8px 32px 0 rgba(255, 255, 255, 0.267);
+            backdrop-filter: blur(6px);
+            padding: 9px;
+            transition: 1.5s;
+            opacity: 1;
+        }
+        .product5:hover {
+            font-size: 1rem;
+            transform: scale(1.05);
+            border-radius: 6%;
+            background: rgba(221, 221, 221, 0.274);
+            box-shadow: 8px 8px 32px 0 rgba(255, 255, 255, 0.267);
+            backdrop-filter: blur(6px);
+            padding: 9px;
+            transition: 1.5s;
+            opacity: 1;
+        }
+        .product6:hover {
+            font-size: 1rem;
+            transform: scale(1.05);
+            border-radius: 6%;
+            background: rgba(221, 221, 221, 0.274);
+            box-shadow: 8px 8px 32px 0 rgba(255, 255, 255, 0.267);
+            backdrop-filter: blur(6px);
+            padding: 9px;
+            transition: 1.5s;
+            opacity: 1;
+        }
+        .product1 {
+            width: min-content;
+        }
+        .product2 {
+            width: min-content;
+        }
+        .product3 {
+            width: min-content;
+        }
+        .product4 {
+            width: min-content;
+        }
+        .product5 {
+            width: min-content;
+        }
+        .product6 {
+            width: min-content;
+        }
     }
     @media (min-width: 1025px) and (max-width: 1440px){
         /* Index Section start */
@@ -443,27 +1072,6 @@ $IntroIcons: rgb(209, 209, 209);
             text-align: left;
             z-index: 1;
         }
-        /* Inicio Section Start */
-        .section_flex_Inicio{
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 10%;
-            z-index: -1;
-        }
-        .section_flex_slider2{
-            width: 50vw;
-        }
-        .section_flex_title1{
-            font-family: "Montserrat", sans-serif;
-            font-size: 1.5rem;
-        }
-        .section_flex_title2{
-            font-family: "Montserrat", sans-serif;
-            font-size: 1.5rem;
-        }
-        /* Inicio Section End */
         /* Club section start */
         .gridClub{
             display: grid;
@@ -523,8 +1131,266 @@ $IntroIcons: rgb(209, 209, 209);
             margin-bottom: auto;
         }
         /* Club section end */
+        /* Tienda section start */
+        .tiendaGrid {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(1, 1fr);
+            grid-column-gap: 15px;
+            grid-row-gap: 0px;
+        }
+        .tiendaGrid{
+            z-index: -1;
+            /* margin-top: 40vh; */
+        }
+        .headerDiv1 {
+            grid-area: 1 / 1 / 3 / 9;
+        }
+        .marketplaceDiv2 {
+            grid-area: 3 / 2 / 9 / 9;
+        }
+        .product1 {
+            grid-area: 4 / 3 / 6 / 4;
+        }
+        .product2 {
+            grid-area: 6 / 3 / 8 / 4;
+        }
+        .product3 {
+            grid-area: 6 / 5 / 8 / 6;
+        }
+        .product4 {
+            grid-area: 4 / 5 / 6 / 6;
+        }
+        .product5 {
+            grid-area: 6 / 7 / 8 / 8;
+        }
+        .product6 {
+            grid-area: 4 / 7 / 6 / 8;
+        }
+        .footerGrid {
+            grid-area: 8 / 1 / 9 / 9;
+        }
+        /*===   Fuente TIENDA    ===*/
+        .tiendaGrid {
+            grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+            font-family: "Montserrat", sans-serif;
+        }
+        /*===   HEADER TIENDA START   ===*/
+        .headerDiv1 {
+            width: 100vw;
+            height: max-content;
+        }
+        .headerTitle {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-left: 42%;
+            margin-top: 1%;
+            width: max-content;
+            height: min-content;
+            padding: 12px;
+            font-size: 1.2rem;
+            background: rgba(221, 221, 221, 0.233);
+            box-shadow: 0px 0px 20px 0 rgba(255, 255, 255, 0.267);
+            text-decoration: none;
+        }
+        .buttonHeader {
+            color: black;
+            text-decoration: none;
+            transition: 1500ms;
+        }
+        .buttonHeader:hover {
+            transition: 1500ms;
+            color: rgb(236, 39, 105);
+        }
+        /*===   TIENDA SECTION START  ===*/
+        .marketplaceDiv2 {
+            height: 105vh;
+        }
+        .productsFlex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-flow: wrap;
+            margin-top: 10vh;
+        }
+        .pricesAndButton {
+            margin-top: 1%;
+            text-decoration: none;
+            color: #333;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            text-align: center;
+            padding: 3%;
+        }
+        .pricesShadow {
+            border-radius: 6%;
+            transition: 320ms;
+            padding: 10px;
+        }
+        .pricesShadow:hover {
+            border-radius: 6%;
+            padding: 10px;
+            transition: 320ms;
+        }
+        .btnComprarShadow {
+            color: black;
+            text-decoration: none;
+            border-radius: 6%;
+            padding: 10px;
+            transition: 1500ms;
+        }
+        .product1 {
+            padding: 9px;
+            transition: 1s;
+            backdrop-filter: blur(6px);
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        .imgProduct1 {
+            border-radius: 4%;
+        }
+        .product2 {
+            padding: 9px;
+            transition: 1s;
+            backdrop-filter: blur(6px);
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        .imgProduct2 {
+            border-radius: 4%;
+        }
+        .product3 {
+            padding: 9px;
+            transition: 1s;
+            backdrop-filter: blur(6px);
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        .imgProduct3 {
+            border-radius: 4%;
+        }
+        .product4 {
+            padding: 9px;
+            transition: 1s;
+            backdrop-filter: blur(6px);
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        .imgProduct4 {
+            border-radius: 4%;
+        }
+        .product5 {
+            padding: 9px;
+            transition: 1s;
+            backdrop-filter: blur(6px);
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        .imgProduct5 {
+            border-radius: 4%;
+        }
+        .product6 {
+            padding: 9px;
+            transition: 1s;
+            backdrop-filter: blur(6px);
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        .imgProduct6 {
+            border-radius: 4%;
+        }
+        .product1:hover {
+            font-size: 1rem;
+            transform: scale(1.05);
+            border-radius: 4%;
+            background: rgba(221, 221, 221, 0.274);
+            box-shadow: 8px 8px 32px 0 rgba(255, 255, 255, 0.267);
+            backdrop-filter: blur(6px);
+            padding: 5px;
+            transition: 1.5s;
+            opacity: 1;
+        }
+        .product2:hover {
+            font-size: 1rem;
+            transform: scale(1.05);
+            border-radius: 6%;
+            background: rgba(221, 221, 221, 0.274);
+            box-shadow: 8px 8px 32px 0 rgba(255, 255, 255, 0.267);
+            backdrop-filter: blur(6px);
+            padding: 9px;
+            transition: 1.5s;
+            opacity: 1;
+        }
+        .product3:hover {
+            font-size: 1rem;
+            transform: scale(1.05);
+            border-radius: 6%;
+            background: rgba(221, 221, 221, 0.274);
+            box-shadow: 8px 8px 32px 0 rgba(255, 255, 255, 0.267);
+            backdrop-filter: blur(6px);
+            padding: 9px;
+            transition: 1.5s;
+            opacity: 1;
+        }
+        .product4:hover {
+            font-size: 1rem;
+            transform: scale(1.05);
+            border-radius: 6%;
+            background: rgba(221, 221, 221, 0.274);
+            box-shadow: 8px 8px 32px 0 rgba(255, 255, 255, 0.267);
+            backdrop-filter: blur(6px);
+            padding: 9px;
+            transition: 1.5s;
+            opacity: 1;
+        }
+        .product5:hover {
+            font-size: 1rem;
+            transform: scale(1.05);
+            border-radius: 6%;
+            background: rgba(221, 221, 221, 0.274);
+            box-shadow: 8px 8px 32px 0 rgba(255, 255, 255, 0.267);
+            backdrop-filter: blur(6px);
+            padding: 9px;
+            transition: 1.5s;
+            opacity: 1;
+        }
+        .product6:hover {
+            font-size: 1rem;
+            transform: scale(1.05);
+            border-radius: 6%;
+            background: rgba(221, 221, 221, 0.274);
+            box-shadow: 8px 8px 32px 0 rgba(255, 255, 255, 0.267);
+            backdrop-filter: blur(6px);
+            padding: 9px;
+            transition: 1.5s;
+            opacity: 1;
+        }
+        .product1 {
+            width: min-content;
+        }
+        .product2 {
+            width: min-content;
+        }
+        .product3 {
+            width: min-content;
+        }
+        .product4 {
+            width: min-content;
+        }
+        .product5 {
+            width: min-content;
+        }
+        .product6 {
+            width: min-content;
+        }
     }
     @media (min-width: 1441px) and (max-width: 1920px){
+        ::-webkit-scrollbar {
+            display: none;
+        }
         /* Index Section start */
         .gridTitleSup{
             width: fit-content;
@@ -546,46 +1412,89 @@ $IntroIcons: rgb(209, 209, 209);
             text-align: left;
         }
         /* Inicio Section Start */
-        .section_flex_Inicio{
+        
+        .parallax{
+            display: flex;
+            flex-direction: column;
+        }
+        .parallax_intermedio{
+            background-color: whitesmoke;
+        }
+        .parallax_intermedio3{
+            background-color: #d18fb0;
+        }
+        .parallaxson1{
+            height: 100vh;
+            width: 100vw;
+        }
+        .parallaxson2{
+            height: 100vh;
+            width: 100vw;
+            background-color: #d18fb0;
+        }
+        .parallaxson3{
+            height: 100vh;
+            width: 100vw;
+            background-color: #d18fb0;
+        }
+        .section2{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .section_flex_slider{
+            margin-top: 10%;
+            width: 30vw;
+            box-shadow: 0px 0px 60px 0px rgb(94, 94, 94);
+        }
+        .section_title1_parallax{
+            margin-top: 10%;
+            height: fit-content;
+            font-family: "Montserrat", sans-serif;
+        }
+        .section_text_parallax{
+            margin-left: 60px;
+            width: 33vw;
+            font-size: 1.3rem;
+        }
+        .section_title_parallax{
+            margin-left: 60px;
+            font-size: 2rem;
+        }
+        .section3{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .section3_title{
+            margin-top: 15%;
+            position: absolute;
+            font-family: "Montserrat", sans-serif;
+        }
+        .section3_img{
+            margin-top: 25%;
             display: flex;
             flex-direction: row;
         }
-        .section_flex_inicio_SliderandTitle{
-            margin-top: 25vh;
-            margin-left: 20vw;
-            display: flex;
-            flex-direction: column;
+        .boxImg_section3{
+            width: 20vw;
+            padding: 10px;
         }
-        .section_flex_inicio_SliderandTitle2{
-            margin-top: 25vh;
-            margin-left: 5vw;
-            display: flex;
-            flex-direction: column;
+        .container_social{
+            margin-left: 40%;
         }
-        .section_flex_slider{
-            width: 35vw;
-        }
-        .section_flex_video{
-            position: absolute;
-            margin-top: 30vh;
-            margin-left: 70vw;
-        }
-        .section_flex_titles{
-            display: flex;
-            justify-content: space-around;
-            height: fit-content;
-            width: fit-content;
-        }
-        .section_flex_title1{
-            font-size: 2rem;
-            height: fit-content;
-            font-family: "Montserrat", sans-serif;
-        }
-        .section_flex_title2{
-            font-size: 2rem;
-            height: fit-content;
-            font-family: "Montserrat", sans-serif;
-        }
+
+
+
+
+
+
+
+
+
+
+
+
         /* Inicio Section End */
         /* Club Section Start */
         .gridClub{
@@ -648,6 +1557,8 @@ $IntroIcons: rgb(209, 209, 209);
         /* Club Section end */
         /* Concurso section start */
         .concursoGrid {
+            margin-top: -40px;
+            margin-left: 5vw;
             display: grid;
             grid-template-columns: repeat(8, 1fr);
             grid-template-rows: repeat(8, 1fr);
@@ -857,6 +1768,7 @@ $IntroIcons: rgb(209, 209, 209);
             font-size: 1em;
         }
           /* Concurso section end */
+          /* Tienda section start */
         .tiendaGrid {
             display: grid;
             grid-template-columns: repeat(8, 1fr);
@@ -866,7 +1778,6 @@ $IntroIcons: rgb(209, 209, 209);
         }
         .tiendaGrid{
             z-index: -1;
-            /* margin-top: 40vh; */
         }
         .headerDiv1 {
             grid-area: 1 / 1 / 3 / 9;
@@ -1147,7 +2058,7 @@ $IntroIcons: rgb(209, 209, 209);
             min-height: 400px;
         }
         .pimg3{
-            background-image: url('/img/equipo/8500.jpg');
+            background-color: $GreyFooter;
             min-height: 400px;
         }
         .pimg4{
@@ -1214,8 +2125,6 @@ $IntroIcons: rgb(209, 209, 209);
             text-decoration: none;
             color: #333333;
         }
-        
-        
         .textDiv{
             /* Text */
             font-size: 0.1rem;
@@ -1223,6 +2132,10 @@ $IntroIcons: rgb(209, 209, 209);
             margin-top: 0%;
             text-align: center;
             width: 800px;
+        }
+        #pTeam{
+            margin-top: 5px;
+            font-size: 0.9rem;
         }
         .firmaVvg{
             position: absolute;

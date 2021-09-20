@@ -1,0 +1,124 @@
+#Menu a {
+    position: fixed;
+    left: -120px;
+    transition: 1.3s;
+    padding: 15px;
+    width: 130px;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    border-radius: 0 10px 10px 0;
+    }
+    #Menu a:hover {
+    left: 0;
+    }
+    #inicio {
+    opacity: 0.8;
+    transition: 2s;
+    top: 20px;
+    background: #ffffffe8;
+    box-shadow: 0 8px 32px 0 rgba(170, 170, 170, 0.329);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    }
+    #tienda {
+    opacity: 0.8;
+    transition: 2s;
+    top: 80px;
+    background: #ffffffe8;
+    box-shadow: 0 8px 32px 0 rgba(170, 170, 170, 0.329);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    }
+    #equipo {
+    opacity: 0.8;
+    transition: 2s;
+    top: 140px;
+    background: #ffffffe8;
+    box-shadow: 0 8px 32px 0 rgba(170, 170, 170, 0.329);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    }
+    #concursos {
+    opacity: 0.8;
+    transition: 2s;
+    top: 200px;
+    background: #ffffffe8;
+    box-shadow: 0 8px 32px 0 rgba(170, 170, 170, 0.329);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    }
+    #clubptd {
+    opacity: 0.8;
+    transition: 2s;
+    top: 260px;
+    background: #ffffffe8;
+    box-shadow: 0 8px 32px 0 rgba(170, 170, 170, 0.329);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    }
+    .menuSlide {
+    font-family: "Montserrat", sans-serif;
+    }
+    #inicio:hover {
+    opacity: 1;
+    background: #ffffffe8;
+    box-shadow: 0 8px 32px 0 rgba(88, 88, 88, 0.329);
+    border-radius: 0px 10px 10px 0px;
+    }
+    #tienda:hover {
+    opacity: 1;
+    background: #ffffffe8;
+    box-shadow: 0 8px 32px 0 rgba(88, 88, 88, 0.329);
+    border-radius: 0px 10px 10px 0px;
+    }
+    #equipo:hover {
+    opacity: 1;
+    background: #ffffffe8;
+    box-shadow: 0 8px 32px 0 rgba(88, 88, 88, 0.329);
+    border-radius: 0px 10px 10px 0px;
+    }
+    #concursos:hover {
+    opacity: 1;
+    background: #ffffffe8;
+    box-shadow: 0 8px 32px 0 rgba(88, 88, 88, 0.329);
+    border-radius: 0px 10px 10px 0px;
+    }
+    #clubptd:hover {
+    opacity: 1;
+    background: #ffffffe8;
+    box-shadow: 0 8px 32px 0 rgba(88, 88, 88, 0.329);
+    border-radius: 0px 10px 10px 0px;
+    }
+    @media (min-width: 320px) and (max-width: 425px){
+        #Menu a {
+            position: absolute;
+            left: -10px;
+            transition: 1.3s;
+            padding: 15px;
+            width: 135px;
+            text-decoration: none;
+            font-size: 18px;
+            color: rgb(0, 0, 0);
+            border-radius: 0 10px 10px 0;
+            }
+    }
+    @media (min-width: 768px) and (max-width: 1024px){
+        #Menu a {
+            position: absolute;
+            left: -10px;
+            transition: 1.3s;
+            padding: 15px;
+            width: 135px;
+            text-decoration: none;
+            font-size: 18px;
+            color: rgb(0, 0, 0);
+            border-radius: 0 10px 10px 0;
+            text-align: left;
+            }
+    }

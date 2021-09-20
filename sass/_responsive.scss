@@ -1,0 +1,167 @@
+@import "../sass/socialMedia";
+@import "../sass/fonts";
+@import "../sass/colores";
+
+
+/* inicio responsive START*/
+    @media (min-width: 320px) and (max-width: 425px){
+        .parallax{
+            display: flex;
+            flex-direction: column;
+            /* items align */
+            align-content: space-between;
+            background-color: #d18fb0;
+            z-index: -1;
+        }
+        .parallaxson1{
+            width: 100vw;
+            height: 100vh;
+        }
+        .parallaxson2{
+            width: 100vw;
+            height: 128vh;
+        }
+        .parallaxson3{
+            width: 100vw;
+            height: 320vh;
+            padding-top: 10vh;
+        }   
+        /*==slider==*/
+        .section_flex_slider{
+            z-index: 1;
+            width: 100vw;
+        }
+        .section_title_parallax{
+            font-size: 1.8rem;
+            text-align: center;
+            padding-top: 3vh;
+            padding-bottom: 7vh;
+            font-family: 'Nunito', sans-serif;
+        }
+        .section_text_parallax{
+            margin-left: 2vh;
+            text-align: left;
+            font-family: 'Nunito', sans-serif;
+        }
+        .imgInicio{
+            width: 100vw;
+        }
+        .section3_title{
+            text-align: center;
+            padding-top: 3vh;
+            padding-bottom: 7vh;
+            font-family: 'Nunito', sans-serif;
+        }
+        .parallax{
+            display: flex;
+            flex-direction: column;
+            /* items align */
+            align-content: space-between;
+            background-color: #d18fb0;
+            z-index: -1;
+        }
+        .parallaxson1{
+            width: 100vw;
+            height: 100vh;
+        }
+        .parallaxson2{
+            width: 100vw;
+            height: 128vh;
+        }
+        .parallaxson3{
+            width: 100vw;
+            height: 320vh;
+            padding-top: 10vh;
+        }   
+        /*==slider==*/
+        .section_flex_slider{
+            z-index: 1;
+            width: 100vw;
+        }
+        .section_title_parallax{
+            font-size: 1.8rem;
+            text-align: center;
+            padding-top: 3vh;
+            padding-bottom: 7vh;
+            font-family: 'Nunito', sans-serif;
+        }
+        .section_text_parallax{
+            margin-left: 2vh;
+            text-align: left;
+            font-family: 'Nunito', sans-serif;
+        }
+        .imgInicio{
+            width: 100vw;
+        }
+        .section3_title{
+            text-align: center;
+            padding-top: 3vh;
+            padding-bottom: 7vh;
+            font-family: 'Nunito', sans-serif;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1024px){
+        .parallax{
+            display: flex;
+            flex-direction: column;
+            /* items align */
+            align-content: space-between;
+            background-color: $InicioB;
+            z-index: -1;
+        }
+        .parallaxson1{
+            width: 100vw;
+            height: 100vh;
+        }
+        .parallaxson2{
+            width: 100vw;
+            height: 160vh;
+        }
+        .parallaxson3{
+            width: 100vw;
+            height: 120vh;
+            padding-top: 20vh;
+        }   
+        /*==slider==*/
+        .section_flex_slider{
+            z-index: 1;
+            width: 70vw;
+            margin-left: 15vw;
+        }
+        .section_title_parallax{
+            font-size: 1.8rem;
+            text-align: center;
+            padding-top: 3vh;
+            padding-bottom: 7vh;
+            font-family: 'Nunito', sans-serif;
+        }
+        .section_text_parallax{
+            margin-left: 15vw;
+            text-align: center;
+            font-family: 'Nunito', sans-serif;
+            width: 70vw;
+        }
+        .imgInicio{
+            margin-top: 17vh;
+            width: 25vw;
+        }
+        .section3_title{
+            text-align: center;
+            padding-top: 3vh;
+            padding-bottom: 7vh;
+            font-family: 'Nunito', sans-serif;
+        }
+        .gridTextSup{
+            font-size: 2.5rem;
+        }
+        .gridTextInf{
+            font-size: 2.5rem;
+        }
+        .section3_img{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    @media (min-width: 1026px) and (max-width: 1920px){
+    }
+/* inicio responsive END*/

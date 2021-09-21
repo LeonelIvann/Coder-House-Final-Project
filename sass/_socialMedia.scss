@@ -45,45 +45,13 @@
 
 @media (min-width: 320px) and (max-width: 425px){
   .Socialmedia{
-    position: absolute;
-    margin-top: 500vh;
-    left: -20px;
+    display: none;
   }
-  .faviconImg{
-    margin-top: 10%;
-    margin-left: 40%;
-    width: 40px;
+}
+@media (min-width: 425px) and (max-width: 768px){
+  .Socialmedia{
+    display: none;
   }
-  .Socialmedia_facebook{
-    background-color: rgba(0, 54, 230, 0.39);
-    padding: 4px;
-    transition: 1500ms;
-    border-radius: 0px 25px 0px 0px;
-  }
-  .Socialmedia_instagram{
-    background-color: rgba(255, 27, 141, 0.103);
-    padding: 4px;
-    transition: 1500ms;
-  }
-  .Socialmedia_linkedin{
-    background-color: rgba(0, 54, 230, 0.103);
-    box-shadow: 0px 10px 10px 0px rgba(49, 49, 49, 0.39);
-    padding: 4px;
-    transition: 1500ms;
-    border-radius: 0px 0px 10px 0px;
-  }
-  .Socialmedia_facebook:hover{
-    background-color: rgb(27, 106, 255);
-    transition: 1500ms;
-  }
-  .Socialmedia_instagram:hover{
-    background-color: rgb(255, 27, 141);
-    transition: 1500ms;
-  }
-  .Socialmedia_linkedin:hover{
-    background-color: rgba(0, 54, 230, 0.562);
-    box-shadow: 0px 10px 10px 0px rgba(49, 49, 49, 0.39);
-    transition: 1500ms;}
 }
 @media (min-width: 769px) and (max-width: 1024px){
   .Socialmedia{
@@ -92,14 +60,14 @@
     flex-direction: row;
     justify-content: space-around;
     width: 80px;
-    margin-top: 367vh;
-    left: 350px;
+    top: 20px;
+    padding-left: 90vw;
   }
   .faviconImg{
     width: 40px;
   }
   .Socialmedia_facebook{
-    background-color: rgba(0, 54, 230, 0.158);
+    background-color: rgba(255, 255, 255, 0.103);
     box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
     padding: 4px;
     transition: 1500ms;
@@ -107,7 +75,7 @@
     border-radius: 8%;
   }
   .Socialmedia_instagram{
-    background-color: rgba(255, 27, 141, 0.158);
+    background-color: rgba(255, 255, 255, 0.103);
     box-shadow: 2px 6px 6px 0px rgba(255, 27, 141, 0.404);
     padding: 4px;
     transition: 1500ms;
@@ -115,7 +83,7 @@
     border-radius: 8%;
   }
   .Socialmedia_linkedin{
-    background-color: rgba(0, 54, 230, 0.103);
+    background-color: rgba(255, 255, 255, 0.103);
     box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
     padding: 4px;
     transition: 1500ms;
@@ -132,7 +100,109 @@
   }
   .Socialmedia_linkedin:hover{
     background-color: rgba(0, 54, 230, 0.562);
-    box-shadow: 0px 10px 10px 0px rgba(49, 49, 49, 0.39);
+    box-shadow: 0px 10px 10px 0px rgba(0, 54, 230, 0.562);
+    transition: 1500ms;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px){
+  .Socialmedia{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80px;
+    top: 20px;
+    padding-left: 90vw;
+  }
+  .faviconImg{
+    width: 40px;
+  }
+  .Socialmedia_facebook{
+    background-color: rgba(255, 255, 255, 0.103);
+    box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
+    padding: 4px;
+    transition: 1500ms;
+    margin-left: 10px;
+    border-radius: 8%;
+  }
+  .Socialmedia_instagram{
+    background-color: rgba(255, 255, 255, 0.103);
+    box-shadow: 2px 6px 6px 0px rgba(255, 27, 141, 0.404);
+    padding: 4px;
+    transition: 1500ms;
+    margin-left: 10px;
+    border-radius: 8%;
+  }
+  .Socialmedia_linkedin{
+    background-color: rgba(255, 255, 255, 0.103);
+    box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
+    padding: 4px;
+    transition: 1500ms;
+    margin-left: 10px;
+    border-radius: 8%;
+  }
+  .Socialmedia_facebook:hover{
+    background-color: rgb(27, 106, 255);
+    transition: 1500ms;
+  }
+  .Socialmedia_instagram:hover{
+    background-color: rgb(255, 27, 141);
+    transition: 1500ms;
+  }
+  .Socialmedia_linkedin:hover{
+    background-color: rgba(0, 54, 230, 0.562);
+    box-shadow: 0px 10px 10px 0px rgba(0, 54, 230, 0.562);
+    transition: 1500ms;
+  }
+}
+@media (min-width: 1441px){
+  .Socialmedia{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80px;
+    top: 20px;
+    padding-left: 90vw;
+  }
+  .faviconImg{
+    width: 40px;
+  }
+  .Socialmedia_facebook{
+    background-color: rgba(255, 255, 255, 0.103);
+    box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
+    padding: 4px;
+    transition: 1500ms;
+    margin-left: 10px;
+    border-radius: 8%;
+  }
+  .Socialmedia_instagram{
+    background-color: rgba(255, 255, 255, 0.103);
+    box-shadow: 2px 6px 6px 0px rgba(255, 27, 141, 0.404);
+    padding: 4px;
+    transition: 1500ms;
+    margin-left: 10px;
+    border-radius: 8%;
+  }
+  .Socialmedia_linkedin{
+    background-color: rgba(255, 255, 255, 0.103);
+    box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
+    padding: 4px;
+    transition: 1500ms;
+    margin-left: 10px;
+    border-radius: 8%;
+  }
+  .Socialmedia_facebook:hover{
+    background-color: rgb(27, 106, 255);
+    transition: 1500ms;
+  }
+  .Socialmedia_instagram:hover{
+    background-color: rgb(255, 27, 141);
+    transition: 1500ms;
+  }
+  .Socialmedia_linkedin:hover{
+    background-color: rgba(0, 54, 230, 0.562);
+    box-shadow: 0px 10px 10px 0px rgba(0, 54, 230, 0.562);
     transition: 1500ms;
   }
 }

@@ -108,7 +108,49 @@
             border-radius: 0 10px 10px 0;
             }
     }
+    @media (min-width: 426px) and (max-width: 767px){
+        #Menu a {
+            position: absolute;
+            left: -10px;
+            transition: 1.3s;
+            padding: 15px;
+            width: 140px;
+            text-decoration: none;
+            font-size: 18px;
+            color: rgb(0, 0, 0);
+            border-radius: 0 10px 10px 0;
+            text-align: left;
+            }
+    }
     @media (min-width: 768px) and (max-width: 1024px){
+        #Menu a {
+            position: absolute;
+            left: -10px;
+            transition: 1.3s;
+            padding: 15px;
+            width: 135px;
+            text-decoration: none;
+            font-size: 18px;
+            color: rgb(0, 0, 0);
+            border-radius: 0 10px 10px 0;
+            text-align: left;
+            }
+    }
+    @media (min-width: 1025px) and (max-width: 1440px){
+        #Menu a {
+            position: absolute;
+            left: -10px;
+            transition: 1.3s;
+            padding: 15px;
+            width: 135px;
+            text-decoration: none;
+            font-size: 18px;
+            color: rgb(0, 0, 0);
+            border-radius: 0 10px 10px 0;
+            text-align: left;
+            }
+    }
+    @media (min-width: 1441px){
         #Menu a {
             position: absolute;
             left: -10px;

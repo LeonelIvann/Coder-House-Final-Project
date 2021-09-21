@@ -7872,38 +7872,11 @@ textarea.form-control-lg {
 } */
 @media (min-width: 320px) and (max-width: 425px) {
   .Socialmedia {
-    position: absolute;
-    margin-top: 500vh;
-    left: -20px; }
-  .faviconImg {
-    margin-top: 10%;
-    margin-left: 40%;
-    width: 40px; }
-  .Socialmedia_facebook {
-    background-color: rgba(0, 54, 230, 0.39);
-    padding: 4px;
-    transition: 1500ms;
-    border-radius: 0px 25px 0px 0px; }
-  .Socialmedia_instagram {
-    background-color: rgba(255, 27, 141, 0.103);
-    padding: 4px;
-    transition: 1500ms; }
-  .Socialmedia_linkedin {
-    background-color: rgba(0, 54, 230, 0.103);
-    box-shadow: 0px 10px 10px 0px rgba(49, 49, 49, 0.39);
-    padding: 4px;
-    transition: 1500ms;
-    border-radius: 0px 0px 10px 0px; }
-  .Socialmedia_facebook:hover {
-    background-color: #1b6aff;
-    transition: 1500ms; }
-  .Socialmedia_instagram:hover {
-    background-color: #ff1b8d;
-    transition: 1500ms; }
-  .Socialmedia_linkedin:hover {
-    background-color: rgba(0, 54, 230, 0.562);
-    box-shadow: 0px 10px 10px 0px rgba(49, 49, 49, 0.39);
-    transition: 1500ms; } }
+    display: none; } }
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .Socialmedia {
+    display: none; } }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .Socialmedia {
@@ -7912,26 +7885,26 @@ textarea.form-control-lg {
     flex-direction: row;
     justify-content: space-around;
     width: 80px;
-    margin-top: 367vh;
-    left: 350px; }
+    top: 20px;
+    padding-left: 90vw; }
   .faviconImg {
     width: 40px; }
   .Socialmedia_facebook {
-    background-color: rgba(0, 54, 230, 0.158);
+    background-color: rgba(255, 255, 255, 0.103);
     box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
     padding: 4px;
     transition: 1500ms;
     margin-left: 5%;
     border-radius: 8%; }
   .Socialmedia_instagram {
-    background-color: rgba(255, 27, 141, 0.158);
+    background-color: rgba(255, 255, 255, 0.103);
     box-shadow: 2px 6px 6px 0px rgba(255, 27, 141, 0.404);
     padding: 4px;
     transition: 1500ms;
     margin-left: 5%;
     border-radius: 8%; }
   .Socialmedia_linkedin {
-    background-color: rgba(0, 54, 230, 0.103);
+    background-color: rgba(255, 255, 255, 0.103);
     box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
     padding: 4px;
     transition: 1500ms;
@@ -7945,7 +7918,93 @@ textarea.form-control-lg {
     transition: 1500ms; }
   .Socialmedia_linkedin:hover {
     background-color: rgba(0, 54, 230, 0.562);
-    box-shadow: 0px 10px 10px 0px rgba(49, 49, 49, 0.39);
+    box-shadow: 0px 10px 10px 0px rgba(0, 54, 230, 0.562);
+    transition: 1500ms; } }
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .Socialmedia {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80px;
+    top: 20px;
+    padding-left: 90vw; }
+  .faviconImg {
+    width: 40px; }
+  .Socialmedia_facebook {
+    background-color: rgba(255, 255, 255, 0.103);
+    box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
+    padding: 4px;
+    transition: 1500ms;
+    margin-left: 10px;
+    border-radius: 8%; }
+  .Socialmedia_instagram {
+    background-color: rgba(255, 255, 255, 0.103);
+    box-shadow: 2px 6px 6px 0px rgba(255, 27, 141, 0.404);
+    padding: 4px;
+    transition: 1500ms;
+    margin-left: 10px;
+    border-radius: 8%; }
+  .Socialmedia_linkedin {
+    background-color: rgba(255, 255, 255, 0.103);
+    box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
+    padding: 4px;
+    transition: 1500ms;
+    margin-left: 10px;
+    border-radius: 8%; }
+  .Socialmedia_facebook:hover {
+    background-color: #1b6aff;
+    transition: 1500ms; }
+  .Socialmedia_instagram:hover {
+    background-color: #ff1b8d;
+    transition: 1500ms; }
+  .Socialmedia_linkedin:hover {
+    background-color: rgba(0, 54, 230, 0.562);
+    box-shadow: 0px 10px 10px 0px rgba(0, 54, 230, 0.562);
+    transition: 1500ms; } }
+
+@media (min-width: 1441px) {
+  .Socialmedia {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80px;
+    top: 20px;
+    padding-left: 90vw; }
+  .faviconImg {
+    width: 40px; }
+  .Socialmedia_facebook {
+    background-color: rgba(255, 255, 255, 0.103);
+    box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
+    padding: 4px;
+    transition: 1500ms;
+    margin-left: 10px;
+    border-radius: 8%; }
+  .Socialmedia_instagram {
+    background-color: rgba(255, 255, 255, 0.103);
+    box-shadow: 2px 6px 6px 0px rgba(255, 27, 141, 0.404);
+    padding: 4px;
+    transition: 1500ms;
+    margin-left: 10px;
+    border-radius: 8%; }
+  .Socialmedia_linkedin {
+    background-color: rgba(255, 255, 255, 0.103);
+    box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
+    padding: 4px;
+    transition: 1500ms;
+    margin-left: 10px;
+    border-radius: 8%; }
+  .Socialmedia_facebook:hover {
+    background-color: #1b6aff;
+    transition: 1500ms; }
+  .Socialmedia_instagram:hover {
+    background-color: #ff1b8d;
+    transition: 1500ms; }
+  .Socialmedia_linkedin:hover {
+    background-color: rgba(0, 54, 230, 0.562);
+    box-shadow: 0px 10px 10px 0px rgba(0, 54, 230, 0.562);
     transition: 1500ms; } }
 
 /* .Socialmedia{
@@ -7994,38 +8053,11 @@ textarea.form-control-lg {
 } */
 @media (min-width: 320px) and (max-width: 425px) {
   .Socialmedia {
-    position: absolute;
-    margin-top: 500vh;
-    left: -20px; }
-  .faviconImg {
-    margin-top: 10%;
-    margin-left: 40%;
-    width: 40px; }
-  .Socialmedia_facebook {
-    background-color: rgba(0, 54, 230, 0.39);
-    padding: 4px;
-    transition: 1500ms;
-    border-radius: 0px 25px 0px 0px; }
-  .Socialmedia_instagram {
-    background-color: rgba(255, 27, 141, 0.103);
-    padding: 4px;
-    transition: 1500ms; }
-  .Socialmedia_linkedin {
-    background-color: rgba(0, 54, 230, 0.103);
-    box-shadow: 0px 10px 10px 0px rgba(49, 49, 49, 0.39);
-    padding: 4px;
-    transition: 1500ms;
-    border-radius: 0px 0px 10px 0px; }
-  .Socialmedia_facebook:hover {
-    background-color: #1b6aff;
-    transition: 1500ms; }
-  .Socialmedia_instagram:hover {
-    background-color: #ff1b8d;
-    transition: 1500ms; }
-  .Socialmedia_linkedin:hover {
-    background-color: rgba(0, 54, 230, 0.562);
-    box-shadow: 0px 10px 10px 0px rgba(49, 49, 49, 0.39);
-    transition: 1500ms; } }
+    display: none; } }
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .Socialmedia {
+    display: none; } }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   .Socialmedia {
@@ -8034,26 +8066,26 @@ textarea.form-control-lg {
     flex-direction: row;
     justify-content: space-around;
     width: 80px;
-    margin-top: 367vh;
-    left: 350px; }
+    top: 20px;
+    padding-left: 90vw; }
   .faviconImg {
     width: 40px; }
   .Socialmedia_facebook {
-    background-color: rgba(0, 54, 230, 0.158);
+    background-color: rgba(255, 255, 255, 0.103);
     box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
     padding: 4px;
     transition: 1500ms;
     margin-left: 5%;
     border-radius: 8%; }
   .Socialmedia_instagram {
-    background-color: rgba(255, 27, 141, 0.158);
+    background-color: rgba(255, 255, 255, 0.103);
     box-shadow: 2px 6px 6px 0px rgba(255, 27, 141, 0.404);
     padding: 4px;
     transition: 1500ms;
     margin-left: 5%;
     border-radius: 8%; }
   .Socialmedia_linkedin {
-    background-color: rgba(0, 54, 230, 0.103);
+    background-color: rgba(255, 255, 255, 0.103);
     box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
     padding: 4px;
     transition: 1500ms;
@@ -8067,7 +8099,93 @@ textarea.form-control-lg {
     transition: 1500ms; }
   .Socialmedia_linkedin:hover {
     background-color: rgba(0, 54, 230, 0.562);
-    box-shadow: 0px 10px 10px 0px rgba(49, 49, 49, 0.39);
+    box-shadow: 0px 10px 10px 0px rgba(0, 54, 230, 0.562);
+    transition: 1500ms; } }
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .Socialmedia {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80px;
+    top: 20px;
+    padding-left: 90vw; }
+  .faviconImg {
+    width: 40px; }
+  .Socialmedia_facebook {
+    background-color: rgba(255, 255, 255, 0.103);
+    box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
+    padding: 4px;
+    transition: 1500ms;
+    margin-left: 10px;
+    border-radius: 8%; }
+  .Socialmedia_instagram {
+    background-color: rgba(255, 255, 255, 0.103);
+    box-shadow: 2px 6px 6px 0px rgba(255, 27, 141, 0.404);
+    padding: 4px;
+    transition: 1500ms;
+    margin-left: 10px;
+    border-radius: 8%; }
+  .Socialmedia_linkedin {
+    background-color: rgba(255, 255, 255, 0.103);
+    box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
+    padding: 4px;
+    transition: 1500ms;
+    margin-left: 10px;
+    border-radius: 8%; }
+  .Socialmedia_facebook:hover {
+    background-color: #1b6aff;
+    transition: 1500ms; }
+  .Socialmedia_instagram:hover {
+    background-color: #ff1b8d;
+    transition: 1500ms; }
+  .Socialmedia_linkedin:hover {
+    background-color: rgba(0, 54, 230, 0.562);
+    box-shadow: 0px 10px 10px 0px rgba(0, 54, 230, 0.562);
+    transition: 1500ms; } }
+
+@media (min-width: 1441px) {
+  .Socialmedia {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80px;
+    top: 20px;
+    padding-left: 90vw; }
+  .faviconImg {
+    width: 40px; }
+  .Socialmedia_facebook {
+    background-color: rgba(255, 255, 255, 0.103);
+    box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
+    padding: 4px;
+    transition: 1500ms;
+    margin-left: 10px;
+    border-radius: 8%; }
+  .Socialmedia_instagram {
+    background-color: rgba(255, 255, 255, 0.103);
+    box-shadow: 2px 6px 6px 0px rgba(255, 27, 141, 0.404);
+    padding: 4px;
+    transition: 1500ms;
+    margin-left: 10px;
+    border-radius: 8%; }
+  .Socialmedia_linkedin {
+    background-color: rgba(255, 255, 255, 0.103);
+    box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
+    padding: 4px;
+    transition: 1500ms;
+    margin-left: 10px;
+    border-radius: 8%; }
+  .Socialmedia_facebook:hover {
+    background-color: #1b6aff;
+    transition: 1500ms; }
+  .Socialmedia_instagram:hover {
+    background-color: #ff1b8d;
+    transition: 1500ms; }
+  .Socialmedia_linkedin:hover {
+    background-color: rgba(0, 54, 230, 0.562);
+    box-shadow: 0px 10px 10px 0px rgba(0, 54, 230, 0.562);
     transition: 1500ms; } }
 
 /* 1 SIN IMPLEMENTAR AUN  */
@@ -8082,6 +8200,10 @@ textarea.form-control-lg {
 /* inicio parallax color */
 /* inicio responsive START*/
 @media (min-width: 320px) and (max-width: 425px) {
+  html {
+    padding-left: -10px; }
+  body {
+    width: 100vw; }
   .parallax {
     display: flex;
     flex-direction: column;
@@ -8159,6 +8281,51 @@ textarea.form-control-lg {
     padding-bottom: 7vh;
     font-family: 'Nunito', sans-serif; } }
 
+@media (min-width: 426px) and (max-width: 767px) {
+  body {
+    width: 100vw; }
+  .parallax {
+    display: flex;
+    flex-direction: column;
+    /* items align */
+    align-content: space-between;
+    background-color: #d18fb0;
+    z-index: -1; }
+  .parallaxson1 {
+    width: 100vw;
+    height: 100vh; }
+  .parallax_intermedio {
+    height: 20px;
+    background-color: #d18fb0; }
+  .parallaxson2 {
+    width: 100vw;
+    height: 156vh; }
+  /*==slider==*/
+  .section_flex_slider {
+    z-index: 1;
+    width: 100vw; }
+  .section_title_parallax {
+    font-size: 1.8rem;
+    text-align: center;
+    padding-top: 3vh;
+    padding-bottom: 7vh;
+    font-family: 'Nunito', sans-serif; }
+  .section_text_parallax {
+    margin-left: 6vw;
+    width: 88vw;
+    text-align: center;
+    font-family: 'Nunito', sans-serif; }
+  .section3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #d18fb0; }
+  .section3_title {
+    margin-left: 17vw;
+    font-family: 'Nunito', sans-serif; }
+  .imgInicio {
+    margin-top: 5px;
+    width: 100vw; } }
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .parallax {
     display: flex;
@@ -8171,12 +8338,13 @@ textarea.form-control-lg {
     width: 100vw;
     height: 100vh; }
   .parallaxson2 {
-    width: 100vw;
-    height: 160vh; }
+    width: 100vw; }
   .parallaxson3 {
     width: 100vw;
     height: 120vh;
     padding-top: 20vh; }
+  .parallax_intermedio {
+    background-color: #d18fb0; }
   /*==slider==*/
   .section_flex_slider {
     z-index: 1;
@@ -8207,7 +8375,115 @@ textarea.form-control-lg {
     font-size: 2.5rem; }
   .section3_img {
     display: flex;
-    flex-direction: row; } }
+    flex-direction: row; }
+  .section3 {
+    background-color: #d18fb0; } }
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .parallax {
+    display: flex;
+    flex-direction: column;
+    /* items align */
+    align-content: space-between;
+    background-color: #d18fb0;
+    z-index: -1; }
+  .parallaxson1 {
+    width: 100vw;
+    height: 100vh; }
+  .parallaxson2 {
+    width: 100vw; }
+  .parallaxson3 {
+    width: 100vw;
+    height: 120vh;
+    padding-top: 20vh; }
+  .parallax_intermedio {
+    background-color: #d18fb0; }
+  /*==slider==*/
+  .section_flex_slider {
+    z-index: 1;
+    width: 70vw;
+    margin-left: 15vw; }
+  .section_title_parallax {
+    font-size: 1.8rem;
+    text-align: center;
+    padding-top: 3vh;
+    padding-bottom: 7vh;
+    font-family: 'Nunito', sans-serif; }
+  .section_text_parallax {
+    margin-left: 15vw;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    width: 70vw; }
+  .imgInicio {
+    margin-top: 17vh;
+    width: 25vw; }
+  .section3_title {
+    text-align: center;
+    padding-top: 3vh;
+    padding-bottom: 7vh;
+    font-family: 'Nunito', sans-serif; }
+  .gridTextSup {
+    font-size: 2.5rem; }
+  .gridTextInf {
+    font-size: 2.5rem; }
+  .section3_img {
+    display: flex;
+    flex-direction: row; }
+  .section3 {
+    background-color: #d18fb0; } }
+
+@media (min-width: 1441px) {
+  .parallax {
+    display: flex;
+    flex-direction: column;
+    /* items align */
+    align-content: space-between;
+    background-color: #d18fb0;
+    z-index: -1; }
+  .parallaxson1 {
+    width: 100vw;
+    height: 100vh; }
+  .parallaxson2 {
+    width: 100vw; }
+  .parallaxson3 {
+    width: 100vw;
+    height: 120vh;
+    padding-top: 20vh; }
+  .parallax_intermedio {
+    background-color: #d18fb0; }
+  /*==slider==*/
+  .section_flex_slider {
+    z-index: 1;
+    width: 70vw;
+    margin-left: 15vw; }
+  .section_title_parallax {
+    font-size: 1.8rem;
+    text-align: center;
+    padding-top: 3vh;
+    padding-bottom: 7vh;
+    font-family: 'Nunito', sans-serif; }
+  .section_text_parallax {
+    margin-left: 15vw;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    width: 70vw; }
+  .imgInicio {
+    margin-top: 17vh;
+    width: 25vw; }
+  .section3_title {
+    text-align: center;
+    padding-top: 3vh;
+    padding-bottom: 7vh;
+    font-family: 'Nunito', sans-serif; }
+  .gridTextSup {
+    font-size: 2.5rem; }
+  .gridTextInf {
+    font-size: 2.5rem; }
+  .section3_img {
+    display: flex;
+    flex-direction: row; }
+  .section3 {
+    background-color: #d18fb0; } }
 
 /* inicio responsive END*/
 /* tienda responsive START */
@@ -8329,7 +8605,46 @@ textarea.form-control-lg {
     color: black;
     border-radius: 0 10px 10px 0; } }
 
+@media (min-width: 426px) and (max-width: 767px) {
+  #Menu a {
+    position: absolute;
+    left: -10px;
+    transition: 1.3s;
+    padding: 15px;
+    width: 140px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    border-radius: 0 10px 10px 0;
+    text-align: left; } }
+
 @media (min-width: 768px) and (max-width: 1024px) {
+  #Menu a {
+    position: absolute;
+    left: -10px;
+    transition: 1.3s;
+    padding: 15px;
+    width: 135px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    border-radius: 0 10px 10px 0;
+    text-align: left; } }
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  #Menu a {
+    position: absolute;
+    left: -10px;
+    transition: 1.3s;
+    padding: 15px;
+    width: 135px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    border-radius: 0 10px 10px 0;
+    text-align: left; } }
+
+@media (min-width: 1441px) {
   #Menu a {
     position: absolute;
     left: -10px;

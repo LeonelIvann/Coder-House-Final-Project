@@ -1,0 +1,42 @@
+[33mcommit 7ddd3e1191d2556a5e1b8246693b13df497a4edc[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/main[m[33m)[m
+Merge: 4313ab1 7ce8ea7
+Author: Leonel Ivan Cardoso <cardosoleonel152@gmail.com>
+Date:   Mon Sep 20 23:27:54 2021 -0300
+
+    Merge branch 'responsive1'
+
+[33mcommit 7ce8ea749c564e4148eaf5b36a2b4ebd60ab2ab7[m[33m ([m[1;32mresponsive1[m[33m)[m
+Author: Leonel Ivan Cardoso <cardosoleonel152@gmail.com>
+Date:   Mon Sep 20 23:27:25 2021 -0300
+
+    Update dirección de archivos
+
+[33mcommit 4313ab115603240f1a7f4139266b3c02fca19b19[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Leonel Ivan Cardoso <cardosoleonel152@gmail.com>
+Date:   Mon Sep 20 23:00:52 2021 -0300
+
+    nojekyll added
+
+[33mcommit 096cbc2108d9717a86f2e5b6fb93d98ad39d0c3e[m
+Author: Leonel Ivan <cardosoleonel152@gmail.com>
+Date:   Mon Sep 20 22:19:50 2021 -0300
+
+    re-ubicación de inicio a index, solucion de problemas de variables e responsive
+
+[33mcommit c6cd4f3af5523022d3a8e5b3b76b65d35b50fd1a[m
+Author: Leonel Ivan <cardosoleonel152@gmail.com>
+Date:   Mon Sep 20 20:24:02 2021 -0300
+
+    Responsive sass V 1.0
+
+[33mcommit 41f5891e5cbab01d91ea1c5eecd3b2fdd237d6c7[m[33m ([m[1;32mversion_2[m[33m)[m
+Author: Leonel Ivan <cardosoleonel152@gmail.com>
+Date:   Sun Sep 19 01:29:25 2021 -0300
+
+    actualizacion de inicio, se agregó redes sociales, efecto parallax y se elimino uno de los slider
+
+[33mcommit fd83ad880881d082bd4d35443c17031807d7cc0f[m
+Author: Leonel Ivan <cardosoleonel152@gmail.com>
+Date:   Wed Sep 15 19:58:01 2021 -0300
+
+    Proyecto pide tres deseos V.1

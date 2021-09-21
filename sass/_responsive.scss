@@ -5,6 +5,12 @@
 
 /* inicio responsive START*/
     @media (min-width: 320px) and (max-width: 425px){
+        html{
+            padding-left: -10px;
+        }
+        body{
+            width: 100vw;
+        }
         .parallax{
             display: flex;
             flex-direction: column;
@@ -100,6 +106,62 @@
             font-family: 'Nunito', sans-serif;
         }
     }
+    @media (min-width: 426px) and (max-width: 767px){
+        body{
+            width: 100vw;
+        }
+        .parallax{
+            display: flex;
+            flex-direction: column;
+            /* items align */
+            align-content: space-between;
+            background-color: #d18fb0;
+            z-index: -1;
+        }
+        .parallaxson1{
+            width: 100vw;
+            height: 100vh;
+        }
+        .parallax_intermedio{
+            height: 20px;
+            background-color: #d18fb0;
+        }
+        .parallaxson2{
+            width: 100vw;
+            height: 156vh;
+        }
+        /*==slider==*/
+        .section_flex_slider{
+            z-index: 1;
+            width: 100vw;
+        }
+        .section_title_parallax{
+            font-size: 1.8rem;
+            text-align: center;
+            padding-top: 3vh;
+            padding-bottom: 7vh;
+            font-family: 'Nunito', sans-serif;
+        }
+        .section_text_parallax{
+            margin-left: 6vw;
+            width: 88vw; 
+            text-align: center;
+            font-family: 'Nunito', sans-serif;
+        }
+        .section3{
+            display: flex;
+            flex-direction: column;
+            background-color: #d18fb0;
+        }
+        .section3_title{
+            margin-left: 17vw;
+            font-family: 'Nunito', sans-serif;
+        }
+        .imgInicio{
+            margin-top: 5px;
+            width: 100vw;
+        }
+    }
     @media (min-width: 768px) and (max-width: 1024px){
         .parallax{
             display: flex;
@@ -115,13 +177,15 @@
         }
         .parallaxson2{
             width: 100vw;
-            height: 160vh;
         }
         .parallaxson3{
             width: 100vw;
             height: 120vh;
             padding-top: 20vh;
-        }   
+        }
+        .parallax_intermedio{
+            background-color: $InicioB;
+        }
         /*==slider==*/
         .section_flex_slider{
             z-index: 1;
@@ -161,8 +225,143 @@
             display: flex;
             flex-direction: row;
         }
+        .section3{
+            background-color: $InicioB;
+        }
     }
     @media (min-width: 1025px) and (max-width: 1440px){
+        .parallax{
+            display: flex;
+            flex-direction: column;
+            /* items align */
+            align-content: space-between;
+            background-color: $InicioB;
+            z-index: -1;
+        }
+        .parallaxson1{
+            width: 100vw;
+            height: 100vh;
+        }
+        .parallaxson2{
+            width: 100vw;
+        }
+        .parallaxson3{
+            width: 100vw;
+            height: 120vh;
+            padding-top: 20vh;
+        }
+        .parallax_intermedio{
+            background-color: $InicioB;
+        }
+        /*==slider==*/
+        .section_flex_slider{
+            z-index: 1;
+            width: 70vw;
+            margin-left: 15vw;
+        }
+        .section_title_parallax{
+            font-size: 1.8rem;
+            text-align: center;
+            padding-top: 3vh;
+            padding-bottom: 7vh;
+            font-family: 'Nunito', sans-serif;
+        }
+        .section_text_parallax{
+            margin-left: 15vw;
+            text-align: center;
+            font-family: 'Nunito', sans-serif;
+            width: 70vw;
+        }
+        .imgInicio{
+            margin-top: 17vh;
+            width: 25vw;
+        }
+        .section3_title{
+            text-align: center;
+            padding-top: 3vh;
+            padding-bottom: 7vh;
+            font-family: 'Nunito', sans-serif;
+        }
+        .gridTextSup{
+            font-size: 2.5rem;
+        }
+        .gridTextInf{
+            font-size: 2.5rem;
+        }
+        .section3_img{
+            display: flex;
+            flex-direction: row;
+        }
+        .section3{
+            background-color: $InicioB;
+        }
+    }
+    @media (min-width: 1441px){
+        .parallax{
+            display: flex;
+            flex-direction: column;
+            /* items align */
+            align-content: space-between;
+            background-color: $InicioB;
+            z-index: -1;
+        }
+        .parallaxson1{
+            width: 100vw;
+            height: 100vh;
+        }
+        .parallaxson2{
+            width: 100vw;
+        }
+        .parallaxson3{
+            width: 100vw;
+            height: 120vh;
+            padding-top: 20vh;
+        }
+        .parallax_intermedio{
+            background-color: $InicioB;
+        }
+        /*==slider==*/
+        .section_flex_slider{
+            z-index: 1;
+            width: 70vw;
+            margin-left: 15vw;
+        }
+        .section_title_parallax{
+            font-size: 1.8rem;
+            text-align: center;
+            padding-top: 3vh;
+            padding-bottom: 7vh;
+            font-family: 'Nunito', sans-serif;
+        }
+        .section_text_parallax{
+            margin-left: 15vw;
+            text-align: center;
+            font-family: 'Nunito', sans-serif;
+            width: 70vw;
+        }
+        .imgInicio{
+            margin-top: 17vh;
+            width: 25vw;
+        }
+        .section3_title{
+            text-align: center;
+            padding-top: 3vh;
+            padding-bottom: 7vh;
+            font-family: 'Nunito', sans-serif;
+        }
+        .gridTextSup{
+            font-size: 2.5rem;
+        }
+        .gridTextInf{
+            font-size: 2.5rem;
+        }
+        .section3_img{
+            display: flex;
+            flex-direction: row;
+        }
+        .section3{
+            background-color: $InicioB;
+        }
     }
 /* inicio responsive END*/
 /* tienda responsive START */

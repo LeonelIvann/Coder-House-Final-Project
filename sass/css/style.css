@@ -7826,368 +7826,6 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
-/* .Socialmedia{
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 80px;
-  margin-top: 40vh;
-}
-.faviconImg{
-  margin-top: 10%;
-  margin-left: 40%;
-  width: 40px;
-}
-.Socialmedia_facebook{
-  background-color: rgba(0, 54, 230, 0.39);
-  padding: 4px;
-  transition: 1500ms;
-  border-radius: 0px 25px 0px 0px;
-}
-.Socialmedia_instagram{
-  background-color: rgba(255, 27, 141, 0.103);
-  padding: 4px;
-  transition: 1500ms;
-}
-.Socialmedia_linkedin{
-  background-color: rgba(0, 54, 230, 0.103);
-  box-shadow: 0px 10px 10px 0px rgba(49, 49, 49, 0.39);
-  padding: 4px;
-  transition: 1500ms;
-  border-radius: 0px 0px 10px 0px;
-}
-.Socialmedia_facebook:hover{
-  background-color: rgb(27, 106, 255);
-  transition: 1500ms;
-}
-.Socialmedia_instagram:hover{
-  background-color: rgb(255, 27, 141);
-  transition: 1500ms;
-}
-.Socialmedia_linkedin:hover{
-  background-color: rgba(0, 54, 230, 0.562);
-  box-shadow: 0px 10px 10px 0px rgba(49, 49, 49, 0.39);
-  transition: 1500ms;
-} */
-@media (min-width: 320px) and (max-width: 425px) {
-  .Socialmedia {
-    display: none; } }
-
-@media (min-width: 425px) and (max-width: 768px) {
-  .Socialmedia {
-    display: none; } }
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .Socialmedia {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 80px;
-    top: 20px;
-    padding-left: 90vw; }
-  .faviconImg {
-    width: 40px; }
-  .Socialmedia_facebook {
-    background-color: rgba(255, 255, 255, 0.103);
-    box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
-    padding: 4px;
-    transition: 1500ms;
-    margin-left: 5%;
-    border-radius: 8%; }
-  .Socialmedia_instagram {
-    background-color: rgba(255, 255, 255, 0.103);
-    box-shadow: 2px 6px 6px 0px rgba(255, 27, 141, 0.404);
-    padding: 4px;
-    transition: 1500ms;
-    margin-left: 5%;
-    border-radius: 8%; }
-  .Socialmedia_linkedin {
-    background-color: rgba(255, 255, 255, 0.103);
-    box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
-    padding: 4px;
-    transition: 1500ms;
-    margin-left: 5%;
-    border-radius: 8%; }
-  .Socialmedia_facebook:hover {
-    background-color: #1b6aff;
-    transition: 1500ms; }
-  .Socialmedia_instagram:hover {
-    background-color: #ff1b8d;
-    transition: 1500ms; }
-  .Socialmedia_linkedin:hover {
-    background-color: rgba(0, 54, 230, 0.562);
-    box-shadow: 0px 10px 10px 0px rgba(0, 54, 230, 0.562);
-    transition: 1500ms; } }
-
-@media (min-width: 1025px) and (max-width: 1440px) {
-  .Socialmedia {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 80px;
-    top: 20px;
-    padding-left: 90vw; }
-  .faviconImg {
-    width: 40px; }
-  .Socialmedia_facebook {
-    background-color: rgba(255, 255, 255, 0.103);
-    box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
-    padding: 4px;
-    transition: 1500ms;
-    margin-left: 10px;
-    border-radius: 8%; }
-  .Socialmedia_instagram {
-    background-color: rgba(255, 255, 255, 0.103);
-    box-shadow: 2px 6px 6px 0px rgba(255, 27, 141, 0.404);
-    padding: 4px;
-    transition: 1500ms;
-    margin-left: 10px;
-    border-radius: 8%; }
-  .Socialmedia_linkedin {
-    background-color: rgba(255, 255, 255, 0.103);
-    box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
-    padding: 4px;
-    transition: 1500ms;
-    margin-left: 10px;
-    border-radius: 8%; }
-  .Socialmedia_facebook:hover {
-    background-color: #1b6aff;
-    transition: 1500ms; }
-  .Socialmedia_instagram:hover {
-    background-color: #ff1b8d;
-    transition: 1500ms; }
-  .Socialmedia_linkedin:hover {
-    background-color: rgba(0, 54, 230, 0.562);
-    box-shadow: 0px 10px 10px 0px rgba(0, 54, 230, 0.562);
-    transition: 1500ms; } }
-
-@media (min-width: 1441px) {
-  .Socialmedia {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 80px;
-    top: 20px;
-    padding-left: 90vw; }
-  .faviconImg {
-    width: 40px; }
-  .Socialmedia_facebook {
-    background-color: rgba(255, 255, 255, 0.103);
-    box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
-    padding: 4px;
-    transition: 1500ms;
-    margin-left: 10px;
-    border-radius: 8%; }
-  .Socialmedia_instagram {
-    background-color: rgba(255, 255, 255, 0.103);
-    box-shadow: 2px 6px 6px 0px rgba(255, 27, 141, 0.404);
-    padding: 4px;
-    transition: 1500ms;
-    margin-left: 10px;
-    border-radius: 8%; }
-  .Socialmedia_linkedin {
-    background-color: rgba(255, 255, 255, 0.103);
-    box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
-    padding: 4px;
-    transition: 1500ms;
-    margin-left: 10px;
-    border-radius: 8%; }
-  .Socialmedia_facebook:hover {
-    background-color: #1b6aff;
-    transition: 1500ms; }
-  .Socialmedia_instagram:hover {
-    background-color: #ff1b8d;
-    transition: 1500ms; }
-  .Socialmedia_linkedin:hover {
-    background-color: rgba(0, 54, 230, 0.562);
-    box-shadow: 0px 10px 10px 0px rgba(0, 54, 230, 0.562);
-    transition: 1500ms; } }
-
-/* .Socialmedia{
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 80px;
-  margin-top: 40vh;
-}
-.faviconImg{
-  margin-top: 10%;
-  margin-left: 40%;
-  width: 40px;
-}
-.Socialmedia_facebook{
-  background-color: rgba(0, 54, 230, 0.39);
-  padding: 4px;
-  transition: 1500ms;
-  border-radius: 0px 25px 0px 0px;
-}
-.Socialmedia_instagram{
-  background-color: rgba(255, 27, 141, 0.103);
-  padding: 4px;
-  transition: 1500ms;
-}
-.Socialmedia_linkedin{
-  background-color: rgba(0, 54, 230, 0.103);
-  box-shadow: 0px 10px 10px 0px rgba(49, 49, 49, 0.39);
-  padding: 4px;
-  transition: 1500ms;
-  border-radius: 0px 0px 10px 0px;
-}
-.Socialmedia_facebook:hover{
-  background-color: rgb(27, 106, 255);
-  transition: 1500ms;
-}
-.Socialmedia_instagram:hover{
-  background-color: rgb(255, 27, 141);
-  transition: 1500ms;
-}
-.Socialmedia_linkedin:hover{
-  background-color: rgba(0, 54, 230, 0.562);
-  box-shadow: 0px 10px 10px 0px rgba(49, 49, 49, 0.39);
-  transition: 1500ms;
-} */
-@media (min-width: 320px) and (max-width: 425px) {
-  .Socialmedia {
-    display: none; } }
-
-@media (min-width: 425px) and (max-width: 768px) {
-  .Socialmedia {
-    display: none; } }
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .Socialmedia {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 80px;
-    top: 20px;
-    padding-left: 90vw; }
-  .faviconImg {
-    width: 40px; }
-  .Socialmedia_facebook {
-    background-color: rgba(255, 255, 255, 0.103);
-    box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
-    padding: 4px;
-    transition: 1500ms;
-    margin-left: 5%;
-    border-radius: 8%; }
-  .Socialmedia_instagram {
-    background-color: rgba(255, 255, 255, 0.103);
-    box-shadow: 2px 6px 6px 0px rgba(255, 27, 141, 0.404);
-    padding: 4px;
-    transition: 1500ms;
-    margin-left: 5%;
-    border-radius: 8%; }
-  .Socialmedia_linkedin {
-    background-color: rgba(255, 255, 255, 0.103);
-    box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
-    padding: 4px;
-    transition: 1500ms;
-    margin-left: 5%;
-    border-radius: 8%; }
-  .Socialmedia_facebook:hover {
-    background-color: #1b6aff;
-    transition: 1500ms; }
-  .Socialmedia_instagram:hover {
-    background-color: #ff1b8d;
-    transition: 1500ms; }
-  .Socialmedia_linkedin:hover {
-    background-color: rgba(0, 54, 230, 0.562);
-    box-shadow: 0px 10px 10px 0px rgba(0, 54, 230, 0.562);
-    transition: 1500ms; } }
-
-@media (min-width: 1025px) and (max-width: 1440px) {
-  .Socialmedia {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 80px;
-    top: 20px;
-    padding-left: 90vw; }
-  .faviconImg {
-    width: 40px; }
-  .Socialmedia_facebook {
-    background-color: rgba(255, 255, 255, 0.103);
-    box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
-    padding: 4px;
-    transition: 1500ms;
-    margin-left: 10px;
-    border-radius: 8%; }
-  .Socialmedia_instagram {
-    background-color: rgba(255, 255, 255, 0.103);
-    box-shadow: 2px 6px 6px 0px rgba(255, 27, 141, 0.404);
-    padding: 4px;
-    transition: 1500ms;
-    margin-left: 10px;
-    border-radius: 8%; }
-  .Socialmedia_linkedin {
-    background-color: rgba(255, 255, 255, 0.103);
-    box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
-    padding: 4px;
-    transition: 1500ms;
-    margin-left: 10px;
-    border-radius: 8%; }
-  .Socialmedia_facebook:hover {
-    background-color: #1b6aff;
-    transition: 1500ms; }
-  .Socialmedia_instagram:hover {
-    background-color: #ff1b8d;
-    transition: 1500ms; }
-  .Socialmedia_linkedin:hover {
-    background-color: rgba(0, 54, 230, 0.562);
-    box-shadow: 0px 10px 10px 0px rgba(0, 54, 230, 0.562);
-    transition: 1500ms; } }
-
-@media (min-width: 1441px) {
-  .Socialmedia {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 80px;
-    top: 20px;
-    padding-left: 90vw; }
-  .faviconImg {
-    width: 40px; }
-  .Socialmedia_facebook {
-    background-color: rgba(255, 255, 255, 0.103);
-    box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
-    padding: 4px;
-    transition: 1500ms;
-    margin-left: 10px;
-    border-radius: 8%; }
-  .Socialmedia_instagram {
-    background-color: rgba(255, 255, 255, 0.103);
-    box-shadow: 2px 6px 6px 0px rgba(255, 27, 141, 0.404);
-    padding: 4px;
-    transition: 1500ms;
-    margin-left: 10px;
-    border-radius: 8%; }
-  .Socialmedia_linkedin {
-    background-color: rgba(255, 255, 255, 0.103);
-    box-shadow: 2px 6px 6px 0px rgba(0, 54, 230, 0.404);
-    padding: 4px;
-    transition: 1500ms;
-    margin-left: 10px;
-    border-radius: 8%; }
-  .Socialmedia_facebook:hover {
-    background-color: #1b6aff;
-    transition: 1500ms; }
-  .Socialmedia_instagram:hover {
-    background-color: #ff1b8d;
-    transition: 1500ms; }
-  .Socialmedia_linkedin:hover {
-    background-color: rgba(0, 54, 230, 0.562);
-    box-shadow: 0px 10px 10px 0px rgba(0, 54, 230, 0.562);
-    transition: 1500ms; } }
-
 /* 1 SIN IMPLEMENTAR AUN  */
 /* 2 Fuente Index>Titulo inferior "viví la experiencia" */
 /* 3 Fuente Index>Titulo superior "Pide tres deseos" */
@@ -8433,60 +8071,130 @@ textarea.form-control-lg {
     background-color: #d18fb0; } }
 
 @media (min-width: 1441px) {
+  ::-webkit-scrollbar {
+    display: none; }
   .parallax {
     display: flex;
     flex-direction: column;
     /* items align */
     align-content: space-between;
     background-color: #d18fb0;
-    z-index: -1; }
+    z-index: -1;
+    width: 100vw; }
+  .section_title_parallax {
+    font-family: 'Nunito', sans-serif; }
+  .section3_title {
+    font-family: 'Nunito', sans-serif; }
   .parallaxson1 {
     width: 100vw;
     height: 100vh; }
   .parallaxson2 {
-    width: 100vw; }
-  .parallaxson3 {
-    width: 100vw;
-    height: 120vh;
-    padding-top: 20vh; }
-  .parallax_intermedio {
-    background-color: #d18fb0; }
-  /*==slider==*/
-  .section_flex_slider {
-    z-index: 1;
-    width: 70vw;
-    margin-left: 15vw; }
-  .section_title_parallax {
-    font-size: 1.8rem;
-    text-align: center;
-    padding-top: 3vh;
-    padding-bottom: 7vh;
-    font-family: 'Nunito', sans-serif; }
-  .section_text_parallax {
-    margin-left: 15vw;
-    text-align: center;
-    font-family: 'Nunito', sans-serif;
-    width: 70vw; }
-  .imgInicio {
-    margin-top: 17vh;
-    width: 25vw; }
-  .section3_title {
-    text-align: center;
-    padding-top: 3vh;
-    padding-bottom: 7vh;
-    font-family: 'Nunito', sans-serif; }
-  .gridTextSup {
-    font-size: 2.5rem; }
-  .gridTextInf {
-    font-size: 2.5rem; }
-  .section3_img {
     display: flex;
     flex-direction: row; }
-  .section3 {
-    background-color: #d18fb0; } }
+  .box_izquierdo {
+    width: 50vw;
+    margin-left: 10%; }
+  .section_flex_slider {
+    width: 38.6vw; }
+  .box_derecho {
+    display: flex;
+    flex-direction: column;
+    width: 50vw; }
+  .section3_img {
+    display: flex;
+    flex-wrap: wrap; }
+  .footer_index {
+    display: flex;
+    margin-top: 50px;
+    height: 60px;
+    background-color: rgba(219, 219, 219, 0.301); }
+  .footer_p {
+    margin-left: 45vw;
+    margin-top: 1vh;
+    font-family: 'Nunito', sans-serif; } }
 
 /* inicio responsive END*/
 /* tienda responsive START */
+@media (min-width: 320px) and (max-width: 425px) {
+  body {
+    background-color: #d18fb0; }
+  .tienda_flex {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif; }
+  .products_flex {
+    margin-top: 40vh;
+    display: flex;
+    flex-direction: column; }
+  .boton_product {
+    display: flex;
+    flex-direction: row; }
+  .btn_price {
+    font-size: 1.3rem;
+    padding: 5px;
+    margin-left: 10%; }
+  .btn_buy {
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 5px;
+    margin-left: 30%; }
+  .product1 {
+    background-color: rgba(255, 255, 255, 0.329);
+    box-shadow: -2px 9px 7px 11px rgba(255, 255, 255, 0.349);
+    height: min-content; }
+  .img.imgProduct1 {
+    width: 100vw; }
+  .img.imgProduct2 {
+    width: 100vw; }
+  .img.imgProduct3 {
+    width: 100vw; }
+  .img.imgProduct4 {
+    width: 100vw; }
+  .img.imgProduct5 {
+    width: 100vw; }
+  .img.imgProduct6 {
+    width: 100vw; }
+  .product2 {
+    background-color: rgba(255, 255, 255, 0.329);
+    box-shadow: -2px 9px 7px 11px rgba(255, 255, 255, 0.349);
+    margin-top: 50px;
+    height: min-content; }
+  .product3 {
+    background-color: rgba(255, 255, 255, 0.329);
+    box-shadow: -2px 9px 7px 11px rgba(255, 255, 255, 0.349);
+    margin-top: 50px;
+    height: min-content; }
+  .product4 {
+    background-color: rgba(255, 255, 255, 0.329);
+    box-shadow: -2px 9px 7px 11px rgba(255, 255, 255, 0.349);
+    margin-top: 50px;
+    height: min-content; }
+  .product5 {
+    background-color: rgba(255, 255, 255, 0.329);
+    box-shadow: -2px 9px 7px 11px rgba(255, 255, 255, 0.349);
+    margin-top: 50px;
+    height: min-content; }
+  .product6 {
+    background-color: rgba(255, 255, 255, 0.329);
+    box-shadow: -2px 9px 7px 11px rgba(255, 255, 255, 0.349);
+    margin-top: 50px;
+    height: min-content; }
+  .description_product {
+    font-size: 1.5rem;
+    text-align: center; }
+  .header_title {
+    margin-top: 10vh;
+    margin-left: 25vw;
+    display: flex; }
+  .headerTxt {
+    font-size: 1.3rem; }
+  .header_text {
+    margin-right: 2.1vw;
+    text-align: right;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem; } }
+
 /* tienda responsive END */
 /* equipo responsive START */
 /* equipo responsive END */

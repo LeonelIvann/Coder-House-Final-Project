@@ -386,6 +386,7 @@
         background-color: rgba(255, 255, 255, 0.329);
         box-shadow: -2px 9px 7px 11px  rgba(255, 255, 255, 0.349);
         height: min-content;
+        width: fit-content;
     }
     .img.imgProduct1{
         width: 100vw;
@@ -410,30 +411,35 @@
         box-shadow: -2px 9px 7px 11px  rgba(255, 255, 255, 0.349);
         margin-top: 50px;
         height: min-content;
+        width: fit-content;
     }
     .product3{
         background-color: rgba(255, 255, 255, 0.329);
         box-shadow: -2px 9px 7px 11px  rgba(255, 255, 255, 0.349);
         margin-top: 50px;
         height: min-content;
+        width: fit-content;
     }
     .product4{
         background-color: rgba(255, 255, 255, 0.329);
         box-shadow: -2px 9px 7px 11px  rgba(255, 255, 255, 0.349);
         margin-top: 50px;
         height: min-content;
+        width: fit-content;
     }
     .product5{
         background-color: rgba(255, 255, 255, 0.329);
         box-shadow: -2px 9px 7px 11px  rgba(255, 255, 255, 0.349);
         margin-top: 50px;
         height: min-content;
+        width: fit-content;
     }
     .product6{
         background-color: rgba(255, 255, 255, 0.329);
         box-shadow: -2px 9px 7px 11px  rgba(255, 255, 255, 0.349);
         margin-top: 50px;
         height: min-content;
+        width: fit-content;
     }
     .description_product{
         font-size: 1.5rem;
@@ -448,16 +454,523 @@
         font-size: 1.3rem;
     }
     .header_text{
-        margin-right: 2.1vw;
+        width: min-content;
+        margin-left: 35vw;
         text-align: right;
         font-family: 'Nunito', sans-serif;
         font-size: 1.5rem;
     }
 }
-@media (min-width: 426px) and (max-width: 767px){}
-@media (min-width: 768px) and (max-width: 1024px){}
-@media (min-width: 1025px) and (max-width: 1440px){}
-@media (min-width: 1441px){}
+@media (min-width: 426px) and (max-width: 767px){
+    body{
+        background-color: $InicioB;
+    }
+    .tienda_flex{
+        display: flex;
+        flex-direction: column;
+        font-family: 'Nunito', sans-serif;
+    }
+    .product_card{
+        width: 100%;
+    }
+    .products_flex{
+        margin-top: 40vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .boton_product{
+        display: flex;
+        flex-direction: row;
+    }
+    .btn_price{
+        font-size: 1.3rem;
+        padding: 5px;
+        margin-left: 10%;
+    }
+    .btn_buy{
+        color: black;
+        text-decoration: none;
+        font-size: 1.3rem;
+        padding: 5px;
+        margin-left: 30%;
+    }
+    .product1{
+        background-color: rgba(255, 255, 255, 0.329);
+        box-shadow: -2px 9px 7px 11px  rgba(255, 255, 255, 0.349);
+        height: min-content;
+        width: fit-content;
+    }
+    .imgProduct1{
+        width: 100%;
+    }
+    .imgProduct2{
+        width: 100%;
+    }
+    .imgProduct3{
+        width: 100%;
+    }
+    .imgProduct4{
+        width: 100%;
+    }
+    .imgProduct5{
+        width: 100%;
+    }
+    .imgProduct6{
+        width: 100%;
+    }
+    .product2{
+        background-color: rgba(255, 255, 255, 0.329);
+        box-shadow: -2px 9px 7px 11px  rgba(255, 255, 255, 0.349);
+        margin-top: 50px;
+        height: min-content;
+        width: fit-content;
+    }
+    .product3{
+        background-color: rgba(255, 255, 255, 0.329);
+        box-shadow: -2px 9px 7px 11px  rgba(255, 255, 255, 0.349);
+        margin-top: 50px;
+        height: min-content;
+        width: fit-content;
+    }
+    .product4{
+        background-color: rgba(255, 255, 255, 0.329);
+        box-shadow: -2px 9px 7px 11px  rgba(255, 255, 255, 0.349);
+        margin-top: 50px;
+        height: min-content;
+        width: fit-content;
+    }
+    .product5{
+        background-color: rgba(255, 255, 255, 0.329);
+        box-shadow: -2px 9px 7px 11px  rgba(255, 255, 255, 0.349);
+        margin-top: 50px;
+        height: min-content;
+        width: fit-content;
+    }
+    .product6{
+        background-color: rgba(255, 255, 255, 0.329);
+        box-shadow: -2px 9px 7px 11px  rgba(255, 255, 255, 0.349);
+        margin-top: 50px;
+        height: min-content;
+        width: fit-content;
+    }
+    .description_product{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .header_title{
+        margin-top: 10vh;
+        margin-left: 25vw;
+        display: flex;
+    }
+    .headerTxt{
+        font-size: 1.3rem;
+    }
+    .header_text{
+        width: min-content;
+        margin-left: 35vw;
+        text-align: right;
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    body{
+        background-color: $InicioB;
+    }
+    .tienda_flex{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-family: 'Nunito', sans-serif;
+    }
+    .product_card{
+        width: 100%;
+    }
+    .products_flex{
+        margin-top: 70vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .boton_product{
+        display: flex;
+        flex-direction: row;
+    }
+    .btn_price{
+        font-size: 1.3rem;
+        padding: 5px;
+        margin-left: 10%;
+    }
+    .btn_buy{
+        color: black;
+        text-decoration: none;
+        font-size: 1.3rem;
+        padding: 5px;
+        margin-left: 30%;
+    }
+    .imgProduct1{
+        width: 45vw;
+    }
+    .imgProduct2{
+        width: 45vw;
+    }
+    .imgProduct3{
+        width: 45vw;
+    }
+    .imgProduct4{
+        width: 45vw;
+    }
+    .imgProduct5{
+        width: 45vw;
+    }
+    .imgProduct6{
+        width: 45vw;
+    }
+    .product1{
+        background-color: rgba(255, 255, 255, 0.233);
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.233);
+        border-radius: 3%;
+        margin-top: 50px;
+        margin-left: 10px;
+        height: min-content;
+        width: 45vw;
+    }
+    .product2{
+        background-color: rgba(255, 255, 255, 0.233);
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.233);
+        border-radius: 3%;
+        margin-top: 50px;
+        margin-left: 50px;
+        height: min-content;
+        width: 45vw;
+    }
+    .product3{
+        background-color: rgba(255, 255, 255, 0.233);
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.233);
+        border-radius: 3%;
+        margin-top: 50px;
+        margin-left: 10px;
+        height: min-content;
+        width: 45vw;
+    }
+    .product4{
+        background-color: rgba(255, 255, 255, 0.233);
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.233);
+        border-radius: 3%;
+        margin-top: 50px;
+        margin-left: 50px;
+        height: min-content;
+        width: 45vw;
+    }
+    .product5{
+        background-color: rgba(255, 255, 255, 0.233);
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.233);
+        border-radius: 3%;
+        margin-top: 50px;
+        margin-left: 10px;
+        height: min-content;
+        width: 45vw;
+    }
+    .product6{
+        background-color: rgba(255, 255, 255, 0.233);
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.233);
+        border-radius: 3%;
+        margin-top: 50px;
+        margin-left: 50px;
+        height: min-content;
+        width: 45vw;
+    }
+    .description_product{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .header_title{
+        margin-top: 10vh;
+        margin-left: 25vw;
+        display: flex;
+    }
+    .headerTxt{
+        font-size: 1.3rem;
+    }
+    .header_text{
+        text-align: right;
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1440px){
+    body{
+        background-color: $InicioB;
+    }
+    .tienda_flex{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-family: 'Nunito', sans-serif;
+    }
+    .product_card{
+        width: 100%;
+    }
+    .products_flex{
+        margin-top: 70vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .boton_product{
+        display: flex;
+        flex-direction: row;
+    }
+    .btn_price{
+        font-size: 1.3rem;
+        padding: 5px;
+        margin-left: 10%;
+    }
+    .btn_buy{
+        color: black;
+        text-decoration: none;
+        font-size: 1.3rem;
+        padding: 5px;
+        margin-left: 30%;
+    }
+    .imgProduct1{
+        width: 45vw;
+    }
+    .imgProduct2{
+        width: 45vw;
+    }
+    .imgProduct3{
+        width: 45vw;
+    }
+    .imgProduct4{
+        width: 45vw;
+    }
+    .imgProduct5{
+        width: 45vw;
+    }
+    .imgProduct6{
+        width: 45vw;
+    }
+    .product1{
+        background-color: rgba(255, 255, 255, 0.233);
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.233);
+        border-radius: 3%;
+        margin-top: 50px;
+        margin-left: 10px;
+        height: min-content;
+        width: 45vw;
+    }
+    .product2{
+        background-color: rgba(255, 255, 255, 0.233);
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.233);
+        border-radius: 3%;
+        margin-top: 50px;
+        margin-left: 50px;
+        height: min-content;
+        width: 45vw;
+    }
+    .product3{
+        background-color: rgba(255, 255, 255, 0.233);
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.233);
+        border-radius: 3%;
+        margin-top: 50px;
+        margin-left: 10px;
+        height: min-content;
+        width: 45vw;
+    }
+    .product4{
+        background-color: rgba(255, 255, 255, 0.233);
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.233);
+        border-radius: 3%;
+        margin-top: 50px;
+        margin-left: 50px;
+        height: min-content;
+        width: 45vw;
+    }
+    .product5{
+        background-color: rgba(255, 255, 255, 0.233);
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.233);
+        border-radius: 3%;
+        margin-top: 50px;
+        margin-left: 10px;
+        height: min-content;
+        width: 45vw;
+    }
+    .product6{
+        background-color: rgba(255, 255, 255, 0.233);
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.233);
+        border-radius: 3%;
+        margin-top: 50px;
+        margin-left: 50px;
+        height: min-content;
+        width: 45vw;
+    }
+    .description_product{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .header_title{
+        margin-top: 25vh;
+        margin-left: 40vw;
+        display: flex;
+    }
+    .headerTxt{
+        font-size: 1.3rem;
+    }
+    .header_text{
+        text-align: right;
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.5rem;
+    }
+}
+@media (min-width: 1441px){
+    body{
+        background-color: $InicioB;
+    }
+    .tienda_flex{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-family: 'Nunito', sans-serif;
+    }
+    .product_card{
+        width: 100%;
+    }
+    .products_flex{
+        height: 100vh;
+        margin-left: 3vw;
+        margin-top: 2vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .boton_product{
+        display: flex;
+        flex-direction: row;
+    }
+    .btn_price{
+        font-size: 1.3rem;
+        padding: 5px;
+        margin-left: 10%;
+    }
+    .btn_buy{
+        color: black;
+        text-decoration: none;
+        font-size: 1.3rem;
+        padding: 5px;
+        margin-left: 30%;
+    }
+    .imgProduct1{
+        margin-left: 3%;
+        border-radius: 4%;
+        width: 20vw;
+    }
+    .imgProduct2{
+        margin-left: 3%;
+        border-radius: 4%;
+        width: 20vw;
+    }
+    .imgProduct3{
+        margin-left: 3%;
+        border-radius: 4%;
+        width: 20vw;
+    }
+    .imgProduct4{
+        margin-left: 3%;
+        border-radius: 4%;
+        width: 20vw;
+    }
+    .imgProduct5{
+        margin-left: 3%;
+        border-radius: 4%;
+        width: 20vw;
+    }
+    .imgProduct6{
+        margin-left: 3%;
+        border-radius: 4%;
+        width: 20vw;
+    }
+    .product1{
+        background-color: rgba(255, 255, 255, 0.233);
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.233);
+        border-radius: 3%;
+        margin-top: 50px;
+        margin-left: 5vw;
+        height: min-content;
+        width: 21vw;
+    }
+    .product2{
+        background-color: rgba(255, 255, 255, 0.233);
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.233);
+        border-radius: 3%;
+        margin-top: 50px;
+        margin-left: 15px;
+        height: min-content;
+        width: 21vw;
+    }
+    .product3{
+        background-color: rgba(255, 255, 255, 0.233);
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.233);
+        border-radius: 3%;
+        margin-top: 50px;
+        margin-left: 20px;
+        height: min-content;
+        width: 21vw;
+    }
+    .product4{
+        background-color: rgba(255, 255, 255, 0.233);
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.233);
+        border-radius: 3%;
+        margin-top: 50px;
+        margin-left: 20px;
+        height: min-content;
+        width: 21vw;
+    }
+    .product5{
+        background-color: rgba(255, 255, 255, 0.233);
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.233);
+        border-radius: 3%;
+        margin-top: 50px;
+        margin-left: 5vw;
+        height: min-content;
+        width: 21vw;
+    }
+    .product6{
+        background-color: rgba(255, 255, 255, 0.233);
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.233);
+        border-radius: 3%;
+        margin-top: 50px;
+        margin-left: 15px;
+        height: min-content;
+        width: 21vw;
+    }
+    .description_product{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .header_title{
+        margin-top: 25vh;
+        margin-left: 40vw;
+        display: flex;
+    }
+    .headerTxt{
+        font-size: 1.3rem;
+    }
+    .header_text{
+        text-align: right;
+        font-family: 'Nunito', sans-serif;
+        font-size: 1.5rem;
+    }
+    .marketplace_start{
+        display: flex;
+        flex-direction: column;
+    }
+    .tienda_publicidad{
+        margin-top: 60vh;
+        height: 10vh;
+        background-color: aliceblue;
+    }
+}
 /* tienda responsive END */
 /* equipo responsive START */
 @media (min-width: 320px) and (max-width: 425px){}

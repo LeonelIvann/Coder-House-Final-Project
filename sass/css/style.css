@@ -7835,7 +7835,29 @@ textarea.form-control-lg {
 /* 6 */
 /* font-family: 'Nunito', sans-serif;  */
 /*========= Colores =============*/
-/* inicio parallax color */
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeOut {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.animate__bounceInLeft,
+.animate__bounceInRight {
+  animation: bounce;
+  animation-duration: 6s; }
+
+.animate__backInUp,
+.animate__backInDown,
+.animate__backInLeft {
+  animation: bounce;
+  animation-duration: 4s; }
+
 /* inicio responsive START*/
 @media (min-width: 320px) and (max-width: 425px) {
   html {
@@ -8111,7 +8133,11 @@ textarea.form-control-lg {
   .footer_p {
     margin-left: 45vw;
     margin-top: 1vh;
-    font-family: 'Nunito', sans-serif; } }
+    font-family: 'Nunito', sans-serif; }
+  h2.gridTextSup, .gridTextSup.h2 {
+    font-size: 4rem; }
+  .gridTextInf {
+    font-size: 4rem; } }
 
 /* inicio responsive END*/
 /* tienda responsive START */
@@ -8156,6 +8182,10 @@ textarea.form-control-lg {
     width: 100vw; }
   .img.imgProduct6 {
     width: 100vw; }
+  .img.imgProduct7 {
+    width: 100vw; }
+  .img.imgProduct8 {
+    width: 100vw; }
   .product2 {
     background-color: rgba(255, 255, 255, 0.329);
     box-shadow: -2px 9px 7px 11px rgba(255, 255, 255, 0.349);
@@ -8181,6 +8211,18 @@ textarea.form-control-lg {
     height: min-content;
     width: fit-content; }
   .product6 {
+    background-color: rgba(255, 255, 255, 0.329);
+    box-shadow: -2px 9px 7px 11px rgba(255, 255, 255, 0.349);
+    margin-top: 50px;
+    height: min-content;
+    width: fit-content; }
+  .product7 {
+    background-color: rgba(255, 255, 255, 0.329);
+    box-shadow: -2px 9px 7px 11px rgba(255, 255, 255, 0.349);
+    margin-top: 50px;
+    height: min-content;
+    width: fit-content; }
+  .product8 {
     background-color: rgba(255, 255, 255, 0.329);
     box-shadow: -2px 9px 7px 11px rgba(255, 255, 255, 0.349);
     margin-top: 50px;
@@ -8526,33 +8568,24 @@ textarea.form-control-lg {
     padding: 5px;
     margin-left: 30%; }
   .imgProduct1 {
-    margin-left: 3%;
-    border-radius: 4%;
-    width: 20vw; }
+    width: 21vw; }
   .imgProduct2 {
-    margin-left: 3%;
-    border-radius: 4%;
-    width: 20vw; }
+    width: 21vw; }
   .imgProduct3 {
-    margin-left: 3%;
-    border-radius: 4%;
-    width: 20vw; }
+    width: 21vw; }
   .imgProduct4 {
-    margin-left: 3%;
-    border-radius: 4%;
-    width: 20vw; }
+    width: 21vw; }
   .imgProduct5 {
-    margin-left: 3%;
-    border-radius: 4%;
-    width: 20vw; }
+    width: 21vw; }
   .imgProduct6 {
-    margin-left: 3%;
-    border-radius: 4%;
-    width: 20vw; }
+    width: 21vw; }
+  .imgProduct7 {
+    width: 21vw; }
+  .imgProduct8 {
+    width: 21vw; }
   .product1 {
     background-color: rgba(255, 255, 255, 0.233);
     box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.233);
-    border-radius: 3%;
     margin-top: 50px;
     margin-left: 5vw;
     height: min-content;
@@ -8560,7 +8593,6 @@ textarea.form-control-lg {
   .product2 {
     background-color: rgba(255, 255, 255, 0.233);
     box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.233);
-    border-radius: 3%;
     margin-top: 50px;
     margin-left: 15px;
     height: min-content;
@@ -8568,7 +8600,6 @@ textarea.form-control-lg {
   .product3 {
     background-color: rgba(255, 255, 255, 0.233);
     box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.233);
-    border-radius: 3%;
     margin-top: 50px;
     margin-left: 20px;
     height: min-content;
@@ -8576,7 +8607,6 @@ textarea.form-control-lg {
   .product4 {
     background-color: rgba(255, 255, 255, 0.233);
     box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.233);
-    border-radius: 3%;
     margin-top: 50px;
     margin-left: 20px;
     height: min-content;
@@ -8584,7 +8614,6 @@ textarea.form-control-lg {
   .product5 {
     background-color: rgba(255, 255, 255, 0.233);
     box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.233);
-    border-radius: 3%;
     margin-top: 50px;
     margin-left: 5vw;
     height: min-content;
@@ -8592,7 +8621,20 @@ textarea.form-control-lg {
   .product6 {
     background-color: rgba(255, 255, 255, 0.233);
     box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.233);
-    border-radius: 3%;
+    margin-top: 50px;
+    margin-left: 15px;
+    height: min-content;
+    width: 21vw; }
+  .product7 {
+    background-color: rgba(255, 255, 255, 0.233);
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.233);
+    margin-top: 50px;
+    margin-left: 15px;
+    height: min-content;
+    width: 21vw; }
+  .product8 {
+    background-color: rgba(255, 255, 255, 0.233);
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.233);
     margin-top: 50px;
     margin-left: 15px;
     height: min-content;
@@ -8622,25 +8664,470 @@ textarea.form-control-lg {
 /* equipo responsive START */
 /* equipo responsive END */
 /* concurso responsive START */
+@media (min-width: 320px) and (max-width: 562px) {
+  .equipo_flex {
+    display: flex;
+    flex-direction: column;
+    background-color: #e2edff; }
+  .textCard_Concurso {
+    margin-top: 2px;
+    color: black;
+    font-size: 0.8rem;
+    font-family: 'Nunito', sans-serif; }
+  .section_inicioEquipo {
+    display: flex;
+    background-color: #e2edff;
+    height: 100vh;
+    width: 100vw; }
+  .section_inicioTitle {
+    font-family: 'Nunito', sans-serif;
+    margin-left: 42vw;
+    margin-top: 34vh;
+    width: 57vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  .btn_inicioTittle {
+    text-decoration: none;
+    font-size: 1.7rem; }
+  .advertencia_concursos {
+    font-size: 1.3rem;
+    height: 2vh;
+    text-align: center; }
+  .concurso_card-uno {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw; }
+  .section_card-and-text {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column; }
+  .card-titleAnd-description {
+    width: 100vw;
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    height: fit-content; }
+  .section_flex_cards {
+    margin-top: 5vh;
+    display: flex;
+    align-content: center;
+    width: 100vw; }
+  .section_card_body {
+    display: flex;
+    width: 100vw;
+    justify-content: center; }
+  .concurso_card-dos {
+    display: flex;
+    margin-top: 40vh;
+    height: 100vh;
+    width: 100vw; }
+  .concurso_card-tres {
+    display: flex;
+    margin-top: 40vh;
+    height: 100vh;
+    width: 100vw; }
+  .section_footer {
+    margin-top: 55vh;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    background-color: #dee4ec6e; }
+  .img_card_Concurso {
+    opacity: 0.3; }
+  .title_inicio {
+    font-size: 2rem; }
+  .subtitle_inicio {
+    width: 57vw;
+    font-size: 1rem; }
+  .box-text-title {
+    font-family: 'Nunito', sans-serif;
+    margin-left: 10vw;
+    text-align: center;
+    width: 80vw;
+    font-size: 1rem; }
+  .textCard_Concurso {
+    font-size: 1.2rem; }
+  .card-description-One {
+    font: 1.5rem; }
+  .card-container, .front, .back {
+    width: 20rem !important;
+    height: 20rem !important; } }
+
+@media (min-width: 563px) and (max-width: 767px) {
+  .equipo_flex {
+    display: flex;
+    flex-direction: column;
+    background-color: #e2edff; }
+  .textCard_Concurso {
+    margin-top: 2px;
+    color: black;
+    font-size: 0.8rem;
+    font-family: 'Nunito', sans-serif; }
+  .section_inicioEquipo {
+    display: flex;
+    background-color: #e2edff;
+    height: 100vh;
+    width: 100vw; }
+  .section_inicioTitle {
+    font-family: 'Nunito', sans-serif;
+    margin-left: 42vw;
+    margin-top: 34vh;
+    width: 57vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  .btn_inicioTittle {
+    text-decoration: none;
+    font-size: 1.7rem; }
+  .advertencia_concursos {
+    font-size: 1.3rem;
+    height: 2vh;
+    text-align: center; }
+  .concurso_card-uno {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw; }
+  .section_card-and-text {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column; }
+  .card-titleAnd-description {
+    width: 100vw;
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    height: fit-content; }
+  .section_flex_cards {
+    display: flex;
+    align-content: center;
+    width: 100vw; }
+  .section_card_body {
+    display: flex;
+    width: 100vw;
+    justify-content: center; }
+  .concurso_card-dos {
+    display: flex;
+    margin-top: 40vh;
+    height: 100vh;
+    width: 100vw; }
+  .concurso_card-tres {
+    display: flex;
+    margin-top: 40vh;
+    height: 100vh;
+    width: 100vw; }
+  .section_footer {
+    margin-top: 55vh;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    background-color: #dee4ec6e; }
+  .img_card_Concurso {
+    opacity: 0.3; }
+  .title_inicio {
+    font-size: 2rem; }
+  .subtitle_inicio {
+    width: 57vw;
+    font-size: 1rem; }
+  .box-text-title {
+    font-family: 'Nunito', sans-serif;
+    margin-left: 10vw;
+    text-align: center;
+    width: 80vw;
+    font-size: 1rem; }
+  .textCard_Concurso {
+    font-size: 1.2rem; }
+  .card-description-One {
+    font: 1.5rem; }
+  .card-container, .front, .back {
+    width: 20rem !important;
+    height: 20rem !important; }
+  .img_card_Concurso {
+    display: none; }
+  .img_card_Concurso1-1 {
+    opacity: 0.3; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .equipo_flex {
+    display: flex;
+    flex-direction: column;
+    background-color: #e2edff; }
+  .textCard_Concurso {
+    margin-top: 2px;
+    color: black;
+    font-size: 0.8rem;
+    font-family: 'Nunito', sans-serif; }
+  .section_inicioEquipo {
+    display: flex;
+    background-color: #e2edff;
+    height: 100vh;
+    width: 100vw; }
+  .section_inicioTitle {
+    font-family: 'Nunito', sans-serif;
+    margin-left: 30vw;
+    margin-top: 45vh;
+    width: 60vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  .btn_inicioTittle {
+    text-decoration: none;
+    font-size: 2rem; }
+  .advertencia_concursos {
+    font-size: 1.3rem;
+    height: 2vh;
+    text-align: center; }
+  .concurso_card-uno {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw; }
+  .section_card-and-text {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column; }
+  .card-titleAnd-description {
+    width: 100vw;
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    height: fit-content; }
+  .section_flex_cards {
+    display: flex;
+    align-content: center;
+    width: 100vw; }
+  .section_card_body {
+    margin-top: 5vh;
+    display: flex;
+    width: 100vw;
+    justify-content: center; }
+  .concurso_card-dos {
+    margin-top: 20vh;
+    display: flex;
+    height: 100vh;
+    width: 100vw; }
+  .concurso_card-tres {
+    margin-top: 20vh;
+    display: flex;
+    height: 100vh;
+    width: 100vw; }
+  .section_footer {
+    margin-top: 40vh;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    background-color: #dee4ec6e; }
+  .img_card_Concurso {
+    opacity: 0.3; }
+  .title_inicio {
+    font-size: 2.8rem; }
+  .subtitle_inicio {
+    width: 60vw;
+    font-size: 1.8rem; }
+  .box-text-title {
+    font-family: 'Nunito', sans-serif;
+    margin-left: 20vw;
+    text-align: center;
+    width: 60vw; } }
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .equipo_flex {
+    display: flex;
+    flex-direction: column;
+    background-color: #e2edff; }
+  .textCard_Concurso {
+    margin-top: 2px;
+    color: black;
+    font-size: 0.8rem;
+    font-family: 'Nunito', sans-serif; }
+  .section_inicioEquipo {
+    display: flex;
+    background-color: #e2edff;
+    height: 100vh;
+    width: 100vw; }
+  .section_inicioTitle {
+    font-family: 'Nunito', sans-serif;
+    margin-left: 50vw;
+    margin-top: 45vh;
+    width: 40vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  .btn_inicioTittle {
+    text-decoration: none;
+    font-size: 2rem; }
+  .advertencia_concursos {
+    font-size: 1.3rem;
+    height: 2vh;
+    text-align: center; }
+  .concurso_card-uno {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw; }
+  .section_card-and-text {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column; }
+  .card-titleAnd-description {
+    width: 100vw;
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    height: fit-content; }
+  .section_flex_cards {
+    display: flex;
+    align-content: center;
+    width: 100vw; }
+  .section_card_body {
+    display: flex;
+    width: 100vw;
+    justify-content: center; }
+  .concurso_card-dos {
+    margin-top: 20vh;
+    display: flex;
+    height: 100vh;
+    width: 100vw; }
+  .concurso_card-tres {
+    margin-top: 20vh;
+    display: flex;
+    height: 100vh;
+    width: 100vw; }
+  .section_footer {
+    margin-top: 40vh;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    background-color: #dee4ec6e; }
+  .img_card_Concurso {
+    opacity: 0.3; }
+  .title_inicio {
+    font-size: 3rem; }
+  .subtitle_inicio {
+    width: 35vw;
+    font-size: 1.8rem; }
+  .box-text-title {
+    font-family: 'Nunito', sans-serif;
+    margin-left: 30vw;
+    text-align: center;
+    width: 40vw; } }
+
+@media (min-width: 1441px) {
+  .equipo_flex {
+    display: flex;
+    flex-direction: column;
+    background-color: #e2edff; }
+  .textCard_Concurso {
+    margin-top: 2px;
+    color: black;
+    font-size: 0.8rem;
+    font-family: 'Nunito', sans-serif; }
+  .section_inicioEquipo {
+    display: flex;
+    background-color: #e2edff;
+    height: 100vh;
+    width: 100vw; }
+  .section_inicioTitle {
+    font-family: 'Nunito', sans-serif;
+    margin-left: 55vw;
+    margin-top: 45vh;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+  .btn_inicioTittle {
+    text-decoration: none;
+    font-size: 2rem; }
+  .advertencia_concursos {
+    font-size: 1.3rem;
+    height: 2vh;
+    text-align: center; }
+  .concurso_card-uno {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw; }
+  .section_card-and-text {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column; }
+  .card-titleAnd-description {
+    width: 100vw;
+    margin-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    height: fit-content; }
+  .section_flex_cards {
+    margin-top: 5vh;
+    display: flex;
+    align-content: center;
+    width: 100vw; }
+  .section_card_body {
+    display: flex;
+    width: 100vw;
+    justify-content: center; }
+  .concurso_card-dos {
+    display: flex;
+    height: 100vh;
+    width: 100vw; }
+  .concurso_card-tres {
+    display: flex;
+    height: 100vh;
+    width: 100vw; }
+  .section_footer {
+    margin-top: 4vh;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    background-color: #dee4ec6e; }
+  .img_card_Concurso {
+    opacity: 0.3; }
+  .title_inicio {
+    font-size: 3rem; }
+  .subtitle_inicio {
+    width: 35vw;
+    font-size: 1.8rem; }
+  .box-text-title {
+    font-family: 'Nunito', sans-serif;
+    margin-left: 30vw;
+    text-align: center;
+    width: 40vw; } }
+
 /* concurso responsive END */
 /* clubptd responsive START */
 /* clubptd responsive END */
 /*========= Colores =============*/
-/* inicio parallax color */
-#Menu a {
-  position: fixed;
-  left: -120px;
-  transition: 1.3s;
-  padding: 15px;
-  width: 130px;
-  text-decoration: none;
-  font-size: 18px;
-  color: black;
-  border-radius: 0 10px 10px 0; }
-
-#Menu a:hover {
-  left: 0; }
-
+/* #Menu a {
+    position: fixed;
+    left: -120px;
+    transition: 1.3s;
+    padding: 15px;
+    width: 130px;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    border-radius: 0 10px 10px 0;
+    }
+    #Menu a:hover {
+    left: 0;
+    } */
 #inicio {
   opacity: 0.8;
   transition: 2s;
@@ -8696,31 +9183,32 @@ textarea.form-control-lg {
 
 #inicio:hover {
   opacity: 1;
-  background: #ffffffe8;
+  background: #ffffff41;
   box-shadow: 0 8px 32px 0 rgba(88, 88, 88, 0.329);
   border-radius: 0px 10px 10px 0px; }
 
 #tienda:hover {
   opacity: 1;
-  background: #ffffffe8;
+  background: #ffffff41;
   box-shadow: 0 8px 32px 0 rgba(88, 88, 88, 0.329);
   border-radius: 0px 10px 10px 0px; }
 
 #equipo:hover {
   opacity: 1;
-  background: #ffffffe8;
+  background: #ffffff41;
   box-shadow: 0 8px 32px 0 rgba(88, 88, 88, 0.329);
   border-radius: 0px 10px 10px 0px; }
 
 #concursos:hover {
   opacity: 1;
-  background: #ffffffe8;
+  background: #ffffff41;
   box-shadow: 0 8px 32px 0 rgba(88, 88, 88, 0.329);
+  backdrop-filter: blur(10px);
   border-radius: 0px 10px 10px 0px; }
 
 #clubptd:hover {
   opacity: 1;
-  background: #ffffffe8;
+  background: #ffffff41;
   box-shadow: 0 8px 32px 0 rgba(88, 88, 88, 0.329);
   border-radius: 0px 10px 10px 0px; }
 
@@ -8738,8 +9226,10 @@ textarea.form-control-lg {
 
 @media (min-width: 426px) and (max-width: 767px) {
   #Menu a {
-    position: absolute;
+    z-index: 1;
+    position: fixed;
     left: -10px;
+    margin-top: 10px;
     transition: 1.3s;
     padding: 15px;
     width: 140px;
@@ -8751,42 +9241,144 @@ textarea.form-control-lg {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   #Menu a {
-    position: absolute;
-    left: -10px;
+    margin-left: 3px;
     transition: 1.3s;
     padding: 15px;
-    width: 135px;
+    width: 140px;
     text-decoration: none;
     font-size: 18px;
     color: black;
-    border-radius: 0 10px 10px 0;
-    text-align: left; } }
+    text-align: center; }
+  .menuSlide {
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 5px;
+    left: 0;
+    right: 0;
+    font-family: "Montserrat", sans-serif; } }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
   #Menu a {
-    position: absolute;
-    left: -10px;
+    margin-left: 5px;
     transition: 1.3s;
     padding: 15px;
-    width: 135px;
+    width: 140px;
     text-decoration: none;
     font-size: 18px;
     color: black;
-    border-radius: 0 10px 10px 0;
-    text-align: left; } }
+    text-align: center; }
+  .menuSlide {
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    justify-content: left;
+    top: 5px;
+    left: 0;
+    right: 0;
+    font-family: "Montserrat", sans-serif; } }
 
 @media (min-width: 1441px) {
   #Menu a {
-    position: absolute;
-    left: -10px;
+    margin-left: 5px;
     transition: 1.3s;
     padding: 15px;
-    width: 135px;
+    width: 140px;
     text-decoration: none;
     font-size: 18px;
     color: black;
-    border-radius: 0 10px 10px 0;
-    text-align: left; } }
+    text-align: center; }
+  .menuSlide {
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 5px;
+    left: 0;
+    right: 0;
+    font-family: "Montserrat", sans-serif; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeOut {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.animate__bounceInLeft,
+.animate__bounceInRight {
+  animation: bounce;
+  animation-duration: 6s; }
+
+.animate__backInUp,
+.animate__backInDown,
+.animate__backInLeft {
+  animation: bounce;
+  animation-duration: 4s; }
+
+.card-container, .front, .back {
+  width: 35rem;
+  height: 35rem; }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card-container, .front, .back {
+    width: 20rem;
+    height: 20rem; } }
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .card-container, .front, .back {
+    width: 20rem;
+    height: 20rem; }
+  .back {
+    background-image: url("../img/concursos/2.jpg"); } }
+
+.front, .back {
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
+  background-color: #d598b7;
+  font-family: BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center; }
+
+/* front side bg is green gradient */
+.front {
+  background-image: linear-gradient(to right bottom, #00a0fd4f, #229955); }
+
+/* back side bg is orange gradient */
+.back {
+  background-image: linear-gradient(to right bottom, #f12d8f73, #e67e22); }
+
+.card-container {
+  position: relative; }
+
+.front, .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  overflow: hidden;
+  transition: transform .8s ease; }
+
+.back {
+  transform: rotateY(180deg); }
+
+.card-container:hover .front {
+  transform: rotateY(-180deg); }
+
+.card-container:hover .back {
+  transform: rotateY(0deg); }
+
+.card-container {
+  perspective: 75rem; }
 
 /* Social media Icons */
 .modal-content {

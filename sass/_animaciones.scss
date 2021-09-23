@@ -1,0 +1,27 @@
+@keyframes fadeIn {
+    from {
+    opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    from {
+    opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
+}
+.animate__bounceInLeft,
+.animate__bounceInRight {
+    animation: bounce;
+    animation-duration: 6s;
+}
+.animate__backInUp,
+.animate__backInDown,
+.animate__backInLeft {
+    animation: bounce;
+    animation-duration: 4s;
+}

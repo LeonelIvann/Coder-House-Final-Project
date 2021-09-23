@@ -1,48 +1,31 @@
-document.addEventListener('DOMContentLoaded', () => { 
+/* orden de fecha mes/dia/año */
+var end = new Date('4/01/2021 12:01 PM');
 
-    //===
-    // VARIABLES
-    //===
-    const DATE_TARGET = new Date('12/25/2021 0:01 AM');
-    // DOM for render
-    const SPAN_DAYS = document.querySelector('span#days3');
-    const SPAN_HOURS = document.querySelector('span#hours3');
-    const SPAN_MINUTES = document.querySelector('span#minutes3');
-    const SPAN_SECONDS = document.querySelector('span#seconds3');
-    // Milliseconds for the calculations
-    const MILLISECONDS_OF_A_SECOND = 1000;
-    const MILLISECONDS_OF_A_MINUTE = MILLISECONDS_OF_A_SECOND * 60;
-    const MILLISECONDS_OF_A_HOUR = MILLISECONDS_OF_A_MINUTE * 60;
-    const MILLISECONDS_OF_A_DAY = MILLISECONDS_OF_A_HOUR * 24
+    var _second = 1000;
+    var _minute = _second * 60;
+    var _hour = _minute * 60;
+    var _day = _hour * 24;
+    var timer;
 
-    //===
-    // FUNCTIONS
-    //===
+    function showRemaining() {
+        var now = new Date();
+        var distance = end - now;
+        if (distance < 0) {
 
-    /**
-    * Method that updates the countdown and the sample
-    */
-    function updateCountdown() {
-        // Calcs
-        const NOW = new Date()
-        const DURATION = DATE_TARGET - NOW;
-        const REMAINING_DAYS = Math.floor(DURATION / MILLISECONDS_OF_A_DAY);
-        const REMAINING_HOURS = Math.floor((DURATION % MILLISECONDS_OF_A_DAY) / MILLISECONDS_OF_A_HOUR);
-        const REMAINING_MINUTES = Math.floor((DURATION % MILLISECONDS_OF_A_HOUR) / MILLISECONDS_OF_A_MINUTE);
-        const REMAINING_SECONDS = Math.floor((DURATION % MILLISECONDS_OF_A_MINUTE) / MILLISECONDS_OF_A_SECOND);
-        // Thanks Pablo Monteserín (https://pablomonteserin.com/cuenta-regresiva/)
+            clearInterval(timer);
+            document.getElementById('cuenta_atras_3').innerHTML = 'EXPIRED!';
 
-        // Render
-        SPAN_DAYS.textContent = REMAINING_DAYS;
-        SPAN_HOURS.textContent = REMAINING_HOURS;
-        SPAN_MINUTES.textContent = REMAINING_MINUTES;
-        SPAN_SECONDS.textContent = REMAINING_SECONDS;
+            return;
+        }
+        var days = Math.floor(distance / _day);
+        var hours = Math.floor((distance % _day) / _hour);
+        var minutes = Math.floor((distance % _hour) / _minute);
+        var seconds = Math.floor((distance % _minute) / _second);
+
+        document.getElementById('cuenta_atras_3').innerHTML = days + ' dias, ';
+        document.getElementById('cuenta_atras_3').innerHTML += hours + ' horas, ';
+        document.getElementById('cuenta_atras_3').innerHTML += minutes + ' minutos y ';
+        document.getElementById('cuenta_atras_3').innerHTML += seconds + ' segundos';
     }
 
-    //===
-    // INIT
-    //===
-    updateCountdown();
-    // Refresh every second
-    setInterval(updateCountdown, MILLISECONDS_OF_A_SECOND);
-});
+    timer = setInterval(showRemaining, 1000);

@@ -111,18 +111,15 @@
     }
     @media (min-width: 426px) and (max-width: 767px){
         #Menu a {
-            z-index: 1;
-            position: fixed;
+            position: absolute;
             left: -10px;
-            margin-top: 10px;
             transition: 1.3s;
             padding: 15px;
-            width: 140px;
+            width: 135px;
             text-decoration: none;
             font-size: 18px;
             color: rgb(0, 0, 0);
             border-radius: 0 10px 10px 0;
-            text-align: left;
             }
     }
     @media (min-width: 768px) and (max-width: 1024px){

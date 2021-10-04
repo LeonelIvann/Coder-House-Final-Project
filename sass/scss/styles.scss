@@ -15,33 +15,10 @@
     margin-top: 50%;
     backdrop-filter: blur(6px);
 }
-.footer_Index{
-    display: flex;
-    height: 45px;
-    margin-top: 20%;
-    background-color: $GreyFooter;
-}
 .modal { 
     background-color: $ModalBackdrop;
     backdrop-filter: blur(5px);
 }
-    .flexContainerIndex {
-        display: flex;
-        flex-direction: column;
-        font-family: "Playfair Display", serif;
-        height: 100vh;
-        background-color: $InicioB;
-    }
-    .gridTitleSup {
-        width: fit-content;
-        margin-top: 43vh;
-        margin-left: 50vw;
-    }
-    .gridTitleInf {
-        width: fit-content;
-        margin-left: 50vw;
-        font-family: "Montserrat", sans-serif;
-    }
     /* Efecto "Pide tres deseos" */
     .gridTextInf {
         display: inline-block;

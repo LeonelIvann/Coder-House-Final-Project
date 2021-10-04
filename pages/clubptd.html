@@ -19,9 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@700&display=swap" rel="stylesheet">
     <title>CLUB PTD</title>
   </head>
-  <!-- background -->
-  <div class="backgroundGradient"></div>
-  <body>
+  <body id="body_equipo">
     <!-- Inicio de Menu -->
     <div id="Menu" class="menuSlide leftmenu">
       <a id="inicio" href="../index.html">INICIO</a>
@@ -31,96 +29,60 @@
       <a id="clubptd" href="/pages/clubptd.html">CLUB PTD</a>
     </div>
     <!-- Fin de Menu -->
-    <div class="gridClub">
-      <div class="gridTitles"> <!-- Titulo superior del Slider -->
-        <div class="gridSubTitles1">
-          <p>Club Pide Tres Deseos</p>
-        </div>
-        <div class="gridSubTitles2">
-          <p>CALIFICACIONES Y OPINIONES DE BUYERS</p>
-        </div>
+    <section class="section-club">
+      <div class="container-title">
+        <h1 class="h1-card-title">OPINIONES DE COMPRADORES <br> <a class="btn-bajar-club" href="#spanCard">BAJAR</a></h1>
       </div>
-      <div class="div4NotTouch"></div>
-      <!-- Slider de fotos + opiniones  BOOTSTRAP  START-->
-      <div class="GridSectionSlider"> 
-        <div id="carouselExampleDark"class="carousel carousel-dark slide"data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleDark"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-              <img src="/img/clubptd/Andrea.jpg" class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block ">
-                <h5 class="titleSlider">Andrea Piacquadio</h5>
-                <p class="textSlider">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Non in laborum, ullam ipsa maxime voluptatum.
-                </p>
+      <span class="section-club-space" id="spanCard"></span>
+    <div id="container-sectionClubCards">
+          <div class="container-card">
+            <div class="cardPure">
+                <h3 id="h3Card">Lucia y Albertha</h3>
+              <div class="card-container-img">
+                <img id="img-cardClub" src="/img/clubptd/Andrea.jpg" alt="">
               </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img src="/img/clubptd/Victoria.jpg" class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
-                <h5 class="titleSlider">Victoria Borodinova</h5>
-                <p class="textSlider">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum harum incidunt consectetur at sint minima!
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="/img/clubptd/Any.jpg" class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
-                <h5 class="titleSlider">Khaleesi Gwendoline</h5>
-                <p class="textSlider">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit dolorum beatae porro suscipit illo? Sapiente!
-                </p>
-              </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis eaque cupiditate earum dicta necessitatibus quaerat voluptatem accusamus! Harum, hic.</p>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-          </button>
+
+            <div class="container-card">
+                <div class="cardPure">
+                  <h3>David y Ignatius</h3>
+                <div class="card-container-img">
+                  <img id="img-cardClub" src="/img/clubptd/Any.jpg" alt="">
+                </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis eaque cupiditate earum dicta necessitatibus quaerat voluptatem accusamus! Harum, hic.</p>
+                </div>
+              </div>
+
+          <div class="container-card Card2Row">    <!-- Card 2º fila inferior -->
+            <div class="cardPure">
+                <h3>Hector y Victoria</h3>
+              <div class="card-container-img">
+                <img id="img-cardClub" src="/img/clubptd/Victoria.jpg" alt="">
+              </div>
+                <p id="text-cardClub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis eaque cupiditate earum dicta necessitatibus quaerat voluptatem accusamus! Harum, hic.</p>
+            </div>
+          </div>
+
+        <div class="container-card Card2Row">
+          <div class="cardPure">
+              <h3>Hector y Victoria</h3>
+            <div class="card-container-img">
+              <img id="img-cardClub" src="/img/clubptd/Victoria.jpg" alt="">
+            </div>
+              <p id="text-cardClub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis debitis eaque cupiditate earum dicta necessitatibus quaerat voluptatem accusamus! Harum, hic.</p>
+          </div>
         </div>
-      </div>
-      <div class="gridButton">  <!-- Boton "Dar opinion" -->
-        <div class="buttonOpinion">
-          <a class="aOpinion" href="#" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">¡Dar mi opinión!</a>
-        </div>
-      </div>
+     <!--  </div> -->
     </div>
+
+
+
+    </section>
+  
     <!-- Modal Bootstrap -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -145,7 +107,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
   <!-- CSS only  (Bootstrap) -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <!-- JavaScript Bundle with Popper -->

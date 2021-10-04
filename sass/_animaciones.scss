@@ -49,3 +49,64 @@
         }
     }
 }
+/* Solo para inicio */
+$speed: 1200ms;
+
+.btn-inicioPTD{
+	opacity: 1;
+	outline: 0;
+	color: #fff;
+	line-height: 40px;
+	position: relative;
+	text-align: center;
+	letter-spacing: 1px;
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	
+	&:hover{
+		
+		&:after{
+			opacity: 1;
+			transform: translateY(0) rotateX(0);
+		}
+		
+		&:before{
+			opacity: 0;
+			transform: translateY(50%) rotateX(90deg);
+		}
+	}
+	
+	&:after{
+		top: 0;
+		left: 0;
+		opacity: 0;
+		width: 100%;
+		color: #000000;
+		display: block;
+		transition: $speed;
+		position: absolute;
+        box-shadow: -8px 6px 10px #6f6f6f63;
+        border-radius: 10px;
+        background: #ffffffa8;
+		content: attr(data-back);
+		transform: translateY(-50%) rotateX(90deg);
+	}
+	
+	&:before{
+		top: 0;
+        left: 0;
+        opacity: 1;
+        color: #000000;
+        display: block;
+        padding: 0 30px;
+        line-height: 40px;
+        transition: $speed;
+        position: relative;
+        box-shadow: inset 1px 4px 10px #6f6f6f26;
+        border-radius: 10px;
+        background: #e7e7e759;
+        content: attr(data-front);
+        transform: translateY(0) rotateX(0);
+	}
+}

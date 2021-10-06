@@ -11,6 +11,8 @@
 /* 5 Fuente Tienda */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
 /* 6 Fuente Inicio Slider */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+/* Concurso Title font-family: 'Bebas Neue', cursive; */
 /* 6 */
 /* font-family: 'Nunito', sans-serif;  */
 /*!
@@ -25,6 +27,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 :root {
   --bs-blue: #0d6efd;
@@ -7832,6 +7835,7 @@ textarea.form-control-lg {
 /* 4 Fuente Equipo */
 /* 5 Fuente Tienda */
 /* 6 Fuente Inicio Slider */
+/* Concurso Title font-family: 'Bebas Neue', cursive; */
 /* 6 */
 /* font-family: 'Nunito', sans-serif;  */
 /*========= Colores =============*/
@@ -7899,6 +7903,7 @@ textarea.form-control-lg {
     color: #000000;
     display: block;
     transition: 1200ms;
+    padding: 10px 20px;
     position: absolute;
     box-shadow: -8px 6px 10px #6f6f6f63;
     border-radius: 10px;
@@ -7911,7 +7916,7 @@ textarea.form-control-lg {
     opacity: 1;
     color: #000000;
     display: block;
-    padding: 0 30px;
+    padding: 10px 20px;
     line-height: 40px;
     transition: 1200ms;
     position: relative;
@@ -7921,8 +7926,143 @@ textarea.form-control-lg {
     content: attr(data-front);
     transform: translateY(0) rotateX(0); }
 
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -10px; }
+  .social-buttons__button {
+    margin: 10px 5px 0; }
+
+.social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  width: 30px;
+  height: 30px;
+  text-decoration: none;
+  border-radius: 100%;
+  background: #fff;
+  text-align: center; }
+  .social-button i,
+  .social-button svg {
+    position: relative;
+    z-index: 1;
+    transition: 0.3s; }
+  .social-button i {
+    font-size: 12px; }
+  .social-button svg {
+    height: 40%;
+    width: 40%; }
+  .social-button--mail {
+    color: #0072c6; }
+    .social-button--mail::after {
+      background: #0072c6; }
+  .social-button--facebook {
+    color: #3b5999; }
+    .social-button--facebook::after {
+      background: #3b5999; }
+  .social-button--linkedin {
+    color: #0077b5; }
+    .social-button--linkedin::after {
+      background: #0077b5; }
+  .social-button--github {
+    color: #6e5494; }
+    .social-button--github::after {
+      background: #6e5494; }
+  .social-button--codepen {
+    color: #212121; }
+    .social-button--codepen::after {
+      background: #212121; }
+  .social-button--steam {
+    color: #7da10e; }
+    .social-button--steam::after {
+      background: #7da10e; }
+  .social-button--snapchat {
+    color: #eec900; }
+    .social-button--snapchat::after {
+      background: #eec900; }
+  .social-button--twitter {
+    color: #55acee; }
+    .social-button--twitter::after {
+      background: #55acee; }
+  .social-button--instagram {
+    color: #e4405f; }
+    .social-button--instagram::after {
+      background: #e4405f; }
+  .social-button--npmjs {
+    color: #c12127; }
+    .social-button--npmjs::after {
+      background: #c12127; }
+
+@media (min-width: 1441px) {
+  .social-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    width: 70px;
+    height: 70px;
+    text-decoration: none;
+    border-radius: 100%;
+    background: #fff;
+    text-align: center; }
+    .social-button i,
+    .social-button svg {
+      position: relative;
+      z-index: 1;
+      transition: 0.3s; }
+    .social-button i {
+      font-size: 30px; }
+    .social-button svg {
+      height: 40%;
+      width: 40%; }
+    .social-button--mail {
+      color: #0072c6; }
+      .social-button--mail::after {
+        background: #0072c6; }
+    .social-button--facebook {
+      color: #3b5999; }
+      .social-button--facebook::after {
+        background: #3b5999; }
+    .social-button--linkedin {
+      color: #0077b5; }
+      .social-button--linkedin::after {
+        background: #0077b5; }
+    .social-button--github {
+      color: #6e5494; }
+      .social-button--github::after {
+        background: #6e5494; }
+    .social-button--codepen {
+      color: #212121; }
+      .social-button--codepen::after {
+        background: #212121; }
+    .social-button--steam {
+      color: #7da10e; }
+      .social-button--steam::after {
+        background: #7da10e; }
+    .social-button--snapchat {
+      color: #eec900; }
+      .social-button--snapchat::after {
+        background: #eec900; }
+    .social-button--twitter {
+      color: #55acee; }
+      .social-button--twitter::after {
+        background: #55acee; }
+    .social-button--instagram {
+      color: #e4405f; }
+      .social-button--instagram::after {
+        background: #e4405f; }
+    .social-button--npmjs {
+      color: #c12127; }
+      .social-button--npmjs::after {
+        background: #c12127; } }
+
 /* inicio responsive START*/
 @media (min-width: 320px) and (max-width: 425px) {
+  .separador-sections-index {
+    height: 20vh; }
   .box-images-425 {
     display: none; }
   .bg-sm {
@@ -7972,7 +8112,7 @@ textarea.form-control-lg {
     background: #7d7d7d24;
     backdrop-filter: blur(10px);
     transition: 1500ms;
-    margin-top: 60vh; }
+    margin-top: 80vh; }
   .container-titles-1:hover {
     color: #383838de;
     box-shadow: 8px -4px 6px 0px #97979724;
@@ -8028,7 +8168,45 @@ textarea.form-control-lg {
   .title-box-sup {
     font-family: "Montserrat", sans-serif;
     font-size: 2rem;
-    text-align: center; } }
+    text-align: center; }
+  .footer-global {
+    margin-top: 8vh;
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 0px 20px;
+    box-shadow: -1px 0px 20px #00000033; }
+  .footer-section-left {
+    width: 46vw;
+    padding-top: 15px;
+    font-size: 2.3rem;
+    display: flex;
+    flex-direction: column; }
+  .footer-section-right {
+    margin-top: 10vh;
+    width: 80vw;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: center; }
+  .section-left-text {
+    display: flex;
+    flex-direction: row; }
+  .section-left-icons {
+    padding-top: 10px;
+    display: flex;
+    flex-flow: row; }
+  #siguenos {
+    padding-right: 10px;
+    font-family: 'Bebas Neue', cursive; }
+  #text-footer-sup {
+    font-size: 1.2rem;
+    font-family: 'Bebas Neue', cursive; }
+  #text-footer-inf {
+    font-size: 1.2rem;
+    font-family: 'Bebas Neue', cursive; } }
 
 @media (min-width: 426px) and (max-width: 767px) {
   .box-images-425 {
@@ -8137,7 +8315,79 @@ textarea.form-control-lg {
     transform: scale(1.8); }
   .image-content-D:hover {
     transition: 1.200ms;
-    transform: scale(1.8); } }
+    transform: scale(1.8); }
+  .footer-global {
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 20px 0px 20px;
+    box-shadow: -1px 0px 20px #00000033; }
+  .footer-section-left {
+    width: 46vw;
+    padding-top: 15px;
+    font-size: 2.3rem;
+    display: flex;
+    flex-direction: column; }
+  .footer-section-right {
+    width: 50vw;
+    padding-top: 15px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end; }
+  .section-left-text {
+    display: flex;
+    flex-direction: row; }
+  .section-left-icons {
+    padding-top: 10px;
+    display: flex; }
+  #siguenos {
+    padding-right: 10px;
+    font-family: 'Bebas Neue', cursive; }
+  #text-footer-sup {
+    font-size: 1.2rem;
+    font-family: 'Bebas Neue', cursive; }
+  #text-footer-inf {
+    font-size: 1.2rem;
+    font-family: 'Bebas Neue', cursive; }
+  .footer-global {
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 20px 0px 20px;
+    box-shadow: -1px 0px 20px #00000033; }
+  .footer-section-left {
+    width: 46vw;
+    padding-top: 15px;
+    font-size: 2.3rem;
+    display: flex;
+    flex-direction: column; }
+  .footer-section-right {
+    width: 50vw;
+    padding-top: 15px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end; }
+  .section-left-text {
+    display: flex;
+    flex-direction: row; }
+  .section-left-icons {
+    padding-top: 10px;
+    display: flex; }
+  #siguenos {
+    padding-right: 10px;
+    font-family: 'Bebas Neue', cursive; }
+  #text-footer-sup {
+    font-size: 1.2rem;
+    font-family: 'Bebas Neue', cursive; }
+  #text-footer-inf {
+    font-size: 1.2rem;
+    font-family: 'Bebas Neue', cursive; } }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .btn-inicioPTD {
@@ -8245,7 +8495,42 @@ textarea.form-control-lg {
     transform: scale(1.8); }
   .image-content-D:hover {
     transition: 1.200ms;
-    transform: scale(1.8); } }
+    transform: scale(1.8); }
+  .footer-global {
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 20px 0px 20px;
+    box-shadow: -1px 0px 20px #00000033; }
+  .footer-section-left {
+    width: 46vw;
+    padding-top: 15px;
+    font-size: 2.3rem;
+    display: flex;
+    flex-direction: column; }
+  .footer-section-right {
+    width: 50vw;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end; }
+  .section-left-text {
+    display: flex;
+    flex-direction: row; }
+  .section-left-icons {
+    padding-top: 10px;
+    display: flex; }
+  #siguenos {
+    padding-right: 10px;
+    font-family: 'Bebas Neue', cursive; }
+  #text-footer-sup {
+    font-size: 1.2rem;
+    font-family: 'Bebas Neue', cursive; }
+  #text-footer-inf {
+    font-size: 1.2rem;
+    font-family: 'Bebas Neue', cursive; } }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
   .btn-inicioPTD {
@@ -8381,7 +8666,7 @@ textarea.form-control-lg {
     justify-content: space-evenly; }
   .section-dos {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column; }
   .section-tres {
@@ -8392,6 +8677,13 @@ textarea.form-control-lg {
     justify-content: center; }
   /* Section Configs End */
   .container-titles-1 {
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 29vh;
     font-family: "Montserrat", sans-serif;
     text-align: center;
     padding: 10px;
@@ -8407,6 +8699,7 @@ textarea.form-control-lg {
     background: #ffffff6e;
     transition: 1500ms; }
   .container-slider-text {
+    font-size: 1.6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8445,10 +8738,13 @@ textarea.form-control-lg {
     background: #d2d2d2;
     box-shadow: 1px 4px 6px 1px #d2d2d2; }
   .box-images-425 {
+    padding-left: 5vw;
+    padding-right: 5vw;
     display: flex;
-    flex-flow: wrap; }
+    flex-flow: wrap;
+    justify-content: center; }
   .img-SizeBox {
-    width: 50vw;
+    max-width: 800px;
     padding: 3px;
     object-fit: contain; }
   .container-imgHq {
@@ -8960,16 +9256,17 @@ textarea.form-control-lg {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    height: fit-content;
     font-family: 'Nunito', sans-serif; }
   .product_card {
     width: 100%; }
   .products_flex {
     height: 100vh;
     padding-top: 20px;
-    padding-left: 20px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    padding-bottom: 40px; }
   .boton_product {
     display: flex;
     flex-direction: row; }
@@ -9060,18 +9357,26 @@ textarea.form-control-lg {
     font-size: 1.5rem;
     text-align: center; }
   .header_title {
-    margin-top: 25vh;
-    margin-left: 40vw;
-    display: flex; }
-  .headerTxt {
-    font-size: 1.3rem; }
+    width: auto;
+    height: 30vh;
+    display: flex;
+    justify-content: center; }
   .header_text {
-    text-align: right;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.5rem; }
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 25vh; }
+  .buttonHeader {
+    text-decoration: none;
+    color: #212529; }
+  .buttonHeader:hover {
+    color: #212529; }
   .marketplace_start {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    height: fit-content; }
   .tienda_publicidad {
     margin-top: 52vh;
     box-shadow: inset -11px -13px 20px 0px #13131317; }
@@ -9081,7 +9386,85 @@ textarea.form-control-lg {
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
-    text-align: center; } }
+    text-align: center;
+    width: 100vw; }
+  .content-adv2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+  .advertising-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: inset 20px 8px 10px #3f3f3f0a;
+    width: 50vw;
+    padding: 20px; }
+  .advertising-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 50vw;
+    padding: 20px; }
+  #clubptd-tienda {
+    font-size: 1.8rem; }
+  #title-adv {
+    font-size: 1.8rem; }
+  .advertising-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: inset 20px 8px 10px #3f3f3f0a;
+    width: 50vw;
+    padding: 20px; }
+  .advertising-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  #btn-adv {
+    text-decoration: none;
+    color: black; }
+  .footer-global {
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 20px 0px 20px;
+    box-shadow: -1px 0px 20px #00000033; }
+  .footer-section-left {
+    width: 46vw;
+    padding-top: 15px;
+    font-size: 3.5rem;
+    display: flex;
+    flex-direction: column; }
+  .footer-section-right {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px; }
+  .section-left-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; }
+  .section-left-icons {
+    padding-top: 10px;
+    display: flex; }
+  #siguenos {
+    padding-right: 10px;
+    padding-top: 25px;
+    font-family: 'Bebas Neue', cursive; }
+  #text-footer-sup {
+    font-size: 1.8rem;
+    font-family: 'Bebas Neue', cursive; }
+  #text-footer-inf {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    font-family: 'Bebas Neue', cursive;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: 8px 13px 20px 0px #4540404d; } }
 
 /* tienda responsive END */
 /* equipo responsive START */
@@ -9583,443 +9966,497 @@ textarea.form-control-lg {
 /* equipo responsive END */
 /* concurso responsive START */
 @media (min-width: 320px) and (max-width: 562px) {
-  .equipo_flex {
+  .section-concurso {
     display: flex;
-    flex-direction: column;
-    background-color: #e2edff; }
-  .textCard_Concurso {
-    margin-top: 2px;
-    color: black;
-    font-size: 0.8rem;
-    font-family: 'Nunito', sans-serif; }
-  .section_inicioEquipo {
-    display: flex;
-    background-color: #e2edff;
+    flex-direction: column; }
+  .header-concursos {
+    width: 100vw;
     height: 100vh;
-    width: 100vw; }
-  .section_inicioTitle {
-    font-family: 'Nunito', sans-serif;
-    margin-left: 42vw;
-    margin-top: 34vh;
-    width: 57vw;
+    display: flex;
+    align-items: end;
+    text-align: center; }
+  .main-concursos {
+    width: 100vw;
     height: fit-content;
-    display: flex;
-    flex-direction: column;
-    text-align: center; }
-  .btn_inicioTittle {
-    text-decoration: none;
-    font-size: 1.7rem; }
-  .advertencia_concursos {
+    display: flex; }
+  .div-container-h1p {
+    margin-bottom: 15vh; }
+  #h1Concurso {
+    font-size: 2.4rem;
+    font-family: 'Bebas Neue', cursive; }
+  #pConcurso {
+    padding: 0px 10px 10px 10px;
+    font-size: 1.5rem;
+    font-family: 'Nunito', sans-serif; }
+  .aButton {
     font-size: 1.3rem;
-    height: 2vh;
-    text-align: center; }
-  .concurso_card-uno {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+    color: black;
+    text-decoration: none; }
+  .container-elements-card {
     width: 100vw; }
-  .section_card-and-text {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-flow: column; }
-  .card-titleAnd-description {
-    width: 100vw;
-    margin-top: 25vh;
-    display: flex;
-    flex-direction: column;
-    height: fit-content; }
-  .section_flex_cards {
-    margin-top: 5vh;
-    display: flex;
-    align-content: center;
-    width: 100vw; }
-  .section_card_body {
-    display: flex;
-    width: 100vw;
-    justify-content: center; }
-  .concurso_card-dos {
-    display: flex;
-    margin-top: 40vh;
-    height: 100vh;
-    width: 100vw; }
-  .concurso_card-tres {
-    display: flex;
-    margin-top: 40vh;
-    height: 100vh;
-    width: 100vw; }
-  .section_footer {
-    margin-top: 55vh;
-    width: 100vw;
-    height: 10vh;
-    display: flex;
-    flex-direction: row;
-    background-color: #dee4ec6e; }
-  .img_card_Concurso {
-    opacity: 0.3; }
-  .title_inicio {
-    font-size: 2rem; }
-  .subtitle_inicio {
-    width: 57vw;
-    font-size: 1rem; }
-  .box-text-title {
-    font-family: 'Nunito', sans-serif;
-    margin-left: 10vw;
+  .container-elements-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .card-1, .card-2, .card-3 {
     text-align: center;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 10px;
+    margin-top: 20vh; }
+  .card-1 {
+    box-shadow: -1px -2px 17px 0px #f4d352; }
+  .card-2 {
+    box-shadow: -1px -2px 17px 0px #fa6e6f; }
+  .card-3 {
+    box-shadow: -1px -2px 17px 0px #fa6e6f; }
+  .container-text-card {
+    box-shadow: 1px 5px 16px 0px #00000069; }
+  .bg-card-1 {
+    background: #f4d352;
+    box-shadow: 1px 5px 16px 0px #f4d352; }
+  .bg-card-2 {
+    background: #fa6e6f;
+    box-shadow: 1px 5px 16px 0px #fa6e6f; }
+  .bg-card-3 {
+    background: #fa6e6f;
+    box-shadow: 1px 5px 16px 0px #fa6e6f; }
+  .span-top-concurso {
+    height: 20px; }
+  .footer-global {
+    margin-top: 8vh;
+    height: fit-content;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 0px 20px;
+    box-shadow: -1px 0px 20px #00000033; }
+  .footer-section-left {
+    width: 46vw;
+    padding-top: 15px;
+    font-size: 2.3rem;
+    display: flex;
+    flex-direction: column; }
+  .footer-section-right {
     width: 80vw;
-    font-size: 1rem; }
-  .textCard_Concurso {
-    font-size: 1.2rem; }
-  .card-description-One {
-    font: 1.5rem; }
-  .card-container, .front, .back {
-    width: 20rem !important;
-    height: 20rem !important; } }
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: center; }
+  .section-left-text {
+    display: flex;
+    flex-direction: row; }
+  .section-left-icons {
+    padding-top: 10px;
+    display: flex;
+    flex-flow: row; }
+  #siguenos {
+    padding-right: 10px;
+    font-family: 'Bebas Neue', cursive; }
+  #text-footer-sup {
+    font-size: 1.2rem;
+    font-family: 'Bebas Neue', cursive; }
+  #text-footer-inf {
+    font-size: 1.2rem;
+    font-family: 'Bebas Neue', cursive; } }
 
 @media (min-width: 563px) and (max-width: 767px) {
-  .equipo_flex {
+  .section-concurso {
     display: flex;
     flex-direction: column; }
-  .textCard_Concurso {
-    margin-top: 2px;
-    color: black;
-    font-size: 0.8rem;
-    font-family: 'Nunito', sans-serif; }
-  .section_inicioEquipo {
+  .container-cards-concurso {
     display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    padding-bottom: 20px; }
+  .header-concursos {
+    width: 100vw;
     height: 100vh;
-    width: 100vw; }
-  .section_inicioTitle {
-    font-family: 'Nunito', sans-serif;
-    margin-left: 42vw;
-    margin-top: 34vh;
-    width: 57vw;
+    display: flex;
+    align-items: end;
+    text-align: center; }
+  .main-concursos {
+    width: 100vw;
     height: fit-content;
-    display: flex;
-    flex-direction: column;
-    text-align: center; }
-  .btn_inicioTittle {
-    text-decoration: none;
-    font-size: 1.7rem; }
-  .advertencia_concursos {
+    display: flex; }
+  .div-container-h1p {
+    margin-bottom: 15vh; }
+  #h1Concurso {
+    font-size: 2.4rem;
+    font-family: 'Bebas Neue', cursive; }
+  #pConcurso {
+    padding: 0px 10px 10px 10px;
+    font-size: 1.5rem;
+    font-family: 'Nunito', sans-serif; }
+  .aButton {
     font-size: 1.3rem;
-    height: 2vh;
-    text-align: center; }
-  .concurso_card-uno {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw; }
-  .section_card-and-text {
+    color: black;
+    text-decoration: none; }
+  .container-elements-card {
+    width: 50vw; }
+  .container-elements-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .card-1, .card-2, .card-3 {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 10px;
+    margin-top: 5vh;
+    width: min-content; }
+  .bg-card-1 {
+    padding: 2px;
+    background: #f4d352;
+    box-shadow: inset 1px 5px 16px 0px #2d240052; }
+  .bg-card-2 {
+    padding: 2px;
+    background: #fa6e6f;
+    box-shadow: inset 1px 5px 16px 0px #792e2e; }
+  .bg-card-3 {
+    padding: 2px;
+    background: #fa6e6f;
+    box-shadow: inset 1px 5px 16px 0px #792e2e; }
+  .span-top-concurso {
+    height: 20px; }
+  .footer-global {
+    height: 15vh;
     width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-flow: column; }
-  .card-titleAnd-description {
-    width: 100vw;
-    margin-top: 25vh;
-    display: flex;
-    flex-direction: column;
-    height: fit-content; }
-  .section_flex_cards {
-    display: flex;
-    align-content: center;
-    width: 100vw; }
-  .section_card_body {
-    display: flex;
-    width: 100vw;
-    justify-content: center; }
-  .concurso_card-dos {
-    display: flex;
-    margin-top: 40vh;
-    height: 100vh;
-    width: 100vw; }
-  .concurso_card-tres {
-    display: flex;
-    margin-top: 40vh;
-    height: 100vh;
-    width: 100vw; }
-  .section_footer {
-    margin-top: 55vh;
-    width: 100vw;
-    height: 10vh;
     display: flex;
     flex-direction: row;
-    background-color: #dee4ec6e; }
-  .img_card_Concurso {
-    opacity: 0.3; }
-  .title_inicio {
-    font-size: 2rem; }
-  .subtitle_inicio {
-    width: 57vw;
-    font-size: 1rem; }
-  .box-text-title {
-    font-family: 'Nunito', sans-serif;
-    margin-left: 10vw;
-    text-align: center;
-    width: 80vw;
-    font-size: 1rem; }
-  .textCard_Concurso {
-    font-size: 1.2rem; }
-  .card-description-One {
-    font: 1.5rem; }
-  .card-container, .front, .back {
-    width: 20rem !important;
-    height: 20rem !important; }
-  .img_card_Concurso {
-    display: none; }
-  .img_card_Concurso1-1 {
-    opacity: 0.3; } }
+    padding: 0px 20px 0px 20px;
+    box-shadow: -1px 0px 20px #00000033; }
+  .footer-section-left {
+    width: 46vw;
+    padding-top: 15px;
+    font-size: 2.3rem;
+    display: flex;
+    flex-direction: column; }
+  .footer-section-right {
+    width: 50vw;
+    padding-top: 15px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end; }
+  .section-left-text {
+    display: flex;
+    flex-direction: row; }
+  .section-left-icons {
+    padding-top: 10px;
+    display: flex; }
+  #siguenos {
+    padding-right: 10px;
+    font-family: 'Bebas Neue', cursive; }
+  #text-footer-sup {
+    font-size: 1.2rem;
+    font-family: 'Bebas Neue', cursive; }
+  #text-footer-inf {
+    font-size: 1.2rem;
+    font-family: 'Bebas Neue', cursive; } }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .equipo_flex {
+  .section-concurso {
     display: flex;
     flex-direction: column; }
-  .textCard_Concurso {
-    margin-top: 2px;
-    color: black;
-    font-size: 0.8rem;
-    font-family: 'Nunito', sans-serif; }
-  .section_inicioEquipo {
+  .container-cards-concurso {
     display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    padding-bottom: 20px; }
+  .header-concursos {
+    width: 100vw;
     height: 100vh;
-    width: 100vw; }
-  .section_inicioTitle {
-    font-family: 'Nunito', sans-serif;
-    margin-left: 30vw;
-    margin-top: 45vh;
-    width: 60vw;
+    display: flex;
+    align-items: end;
+    text-align: center; }
+  .main-concursos {
+    width: 100vw;
     height: fit-content;
-    display: flex;
-    flex-direction: column;
-    text-align: center; }
-  .btn_inicioTittle {
-    text-decoration: none;
-    font-size: 2rem; }
-  .advertencia_concursos {
+    display: flex; }
+  .div-container-h1p {
+    width: 100%;
+    margin-bottom: 15vh; }
+  #h1Concurso {
+    font-size: 2.4rem;
+    font-family: 'Bebas Neue', cursive; }
+  #pConcurso {
+    padding: 0px 10px 10px 10px;
+    font-size: 1.5rem;
+    font-family: 'Nunito', sans-serif; }
+  .aButton {
     font-size: 1.3rem;
-    height: 2vh;
-    text-align: center; }
-  .concurso_card-uno {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw; }
-  .section_card-and-text {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-flow: column; }
-  .card-titleAnd-description {
-    width: 100vw;
-    margin-top: 25vh;
-    display: flex;
-    flex-direction: column;
-    height: fit-content; }
-  .section_flex_cards {
-    display: flex;
-    align-content: center;
-    width: 100vw; }
-  .section_card_body {
+    color: black;
+    text-decoration: none; }
+  .container-elements-card {
+    width: 340px; }
+  .container-elements-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .card-1, .card-2, .card-3 {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 10px;
     margin-top: 5vh;
-    display: flex;
+    width: min-content; }
+  .bg-card-1 {
+    padding: 2px;
+    background: #f4d352;
+    box-shadow: inset 1px 5px 16px 0px #2d240052; }
+  .bg-card-2 {
+    padding: 2px;
+    background: #fa6e6f;
+    box-shadow: inset 1px 5px 16px 0px #792e2e; }
+  .bg-card-3 {
+    padding: 2px;
+    background: #fa6e6f;
+    box-shadow: inset 1px 5px 16px 0px #792e2e; }
+  .span-top-concurso {
+    height: 20px; }
+  .footer-global {
+    height: 15vh;
     width: 100vw;
-    justify-content: center; }
-  .concurso_card-dos {
-    margin-top: 20vh;
-    display: flex;
-    height: 100vh;
-    width: 100vw; }
-  .concurso_card-tres {
-    margin-top: 20vh;
-    display: flex;
-    height: 100vh;
-    width: 100vw; }
-  .section_footer {
-    margin-top: 40vh;
-    width: 100vw;
-    height: 10vh;
     display: flex;
     flex-direction: row;
-    background-color: #dee4ec6e; }
-  .img_card_Concurso {
-    opacity: 0.3; }
-  .title_inicio {
-    font-size: 2.8rem; }
-  .subtitle_inicio {
-    width: 60vw;
-    font-size: 1.8rem; }
-  .box-text-title {
-    font-family: 'Nunito', sans-serif;
-    margin-left: 20vw;
-    text-align: center;
-    width: 60vw; } }
+    padding: 0px 20px 0px 20px;
+    box-shadow: -1px 0px 20px #00000033; }
+  .footer-section-left {
+    width: 46vw;
+    padding-top: 15px;
+    font-size: 2.3rem;
+    display: flex;
+    flex-direction: column; }
+  .footer-section-right {
+    width: 50vw;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end; }
+  .section-left-text {
+    display: flex;
+    flex-direction: row; }
+  .section-left-icons {
+    padding-top: 10px;
+    display: flex; }
+  #siguenos {
+    padding-right: 10px;
+    font-family: 'Bebas Neue', cursive; }
+  #text-footer-sup {
+    font-size: 1.2rem;
+    font-family: 'Bebas Neue', cursive; }
+  #text-footer-inf {
+    font-size: 1.2rem;
+    font-family: 'Bebas Neue', cursive; } }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
-  .equipo_flex {
+  .section-concurso {
     display: flex;
     flex-direction: column; }
-  .textCard_Concurso {
-    margin-top: 2px;
-    color: black;
-    font-size: 0.8rem;
-    font-family: 'Nunito', sans-serif; }
-  .section_inicioEquipo {
+  .container-cards-concurso {
     display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    padding-bottom: 20px; }
+  .header-concursos {
+    width: 100vw;
     height: 100vh;
-    width: 100vw; }
-  .section_inicioTitle {
-    font-family: 'Nunito', sans-serif;
-    margin-left: 50vw;
-    margin-top: 45vh;
-    width: 40vw;
+    display: flex;
+    align-items: end;
+    text-align: center; }
+  .main-concursos {
+    width: 100vw;
     height: fit-content;
     display: flex;
-    flex-direction: column;
-    text-align: center; }
-  .btn_inicioTittle {
-    text-decoration: none;
-    font-size: 2rem; }
-  .advertencia_concursos {
-    font-size: 1.3rem;
-    height: 2vh;
-    text-align: center; }
-  .concurso_card-uno {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw; }
-  .section_card-and-text {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-flow: column; }
-  .card-titleAnd-description {
-    width: 100vw;
-    margin-top: 25vh;
-    display: flex;
-    flex-direction: column;
-    height: fit-content; }
-  .section_flex_cards {
-    display: flex;
-    align-content: center;
-    width: 100vw; }
-  .section_card_body {
-    display: flex;
-    width: 100vw;
     justify-content: center; }
-  .concurso_card-dos {
-    margin-top: 20vh;
-    display: flex;
-    height: 100vh;
-    width: 100vw; }
-  .concurso_card-tres {
-    margin-top: 20vh;
-    display: flex;
-    height: 100vh;
-    width: 100vw; }
-  .section_footer {
-    margin-top: 40vh;
+  .div-container-h1p {
+    width: 100%;
+    margin-bottom: 15vh; }
+  #h1Concurso {
+    font-size: 2.4rem;
+    font-family: 'Bebas Neue', cursive; }
+  #pConcurso {
+    padding: 0px 10px 10px 10px;
+    font-size: 1.5rem;
+    font-family: 'Nunito', sans-serif; }
+  .aButton {
+    font-size: 1.3rem;
+    color: black;
+    text-decoration: none; }
+  .container-elements-card {
+    width: 340px; }
+  .container-elements-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .card-1, .card-2, .card-3 {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 10px;
+    padding: 3px;
+    margin-top: 5vh;
+    width: min-content; }
+  .bg-card-1 {
+    padding: 2px;
+    background: #f4d352;
+    box-shadow: inset 1px 5px 16px 0px #2d240052; }
+  .bg-card-2 {
+    padding: 2px;
+    background: #fa6e6f;
+    box-shadow: inset 1px 5px 16px 0px #792e2e; }
+  .bg-card-3 {
+    padding: 2px;
+    background: #fa6e6f;
+    box-shadow: inset 1px 5px 16px 0px #792e2e; }
+  .span-top-concurso {
+    height: 20px; }
+  .footer-global {
+    height: 15vh;
     width: 100vw;
-    height: 10vh;
     display: flex;
     flex-direction: row;
-    background-color: #dee4ec6e; }
-  .img_card_Concurso {
-    opacity: 0.3; }
-  .title_inicio {
-    font-size: 3rem; }
-  .subtitle_inicio {
-    width: 35vw;
-    font-size: 1.8rem; }
-  .box-text-title {
-    font-family: 'Nunito', sans-serif;
-    margin-left: 30vw;
-    text-align: center;
-    width: 40vw; } }
+    padding: 0px 20px 0px 20px;
+    box-shadow: -1px 0px 20px #00000033; }
+  .footer-section-left {
+    width: 46vw;
+    padding-top: 15px;
+    font-size: 3.5rem;
+    display: flex;
+    flex-direction: column; }
+  .footer-section-right {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px; }
+  .section-left-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; }
+  .section-left-icons {
+    padding-top: 10px;
+    display: flex; }
+  #siguenos {
+    padding-right: 10px;
+    padding-top: 25px;
+    font-family: 'Bebas Neue', cursive; }
+  #text-footer-sup {
+    font-size: 1.8rem;
+    font-family: 'Bebas Neue', cursive; }
+  #text-footer-inf {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    font-family: 'Bebas Neue', cursive;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: 8px 13px 20px 0px #4540404d; } }
 
 @media (min-width: 1441px) {
-  .equipo_flex {
+  .section-concurso {
     display: flex;
     flex-direction: column; }
-  .textCard_Concurso {
-    margin-top: 2px;
-    color: black;
-    font-size: 0.8rem;
-    font-family: 'Nunito', sans-serif; }
-  .section_inicioEquipo {
+  .container-cards-concurso {
     display: flex;
-    height: 100vh;
-    width: 100vw; }
-  .section_inicioTitle {
-    font-family: 'Nunito', sans-serif;
-    margin-left: 55vw;
-    margin-top: 45vh;
-    width: fit-content;
+    flex-flow: wrap;
+    justify-content: center;
+    padding-bottom: 20px; }
+  .header-concursos {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    align-items: end;
+    text-align: center; }
+  .main-concursos {
+    width: 100vw;
     height: fit-content;
     display: flex;
-    flex-direction: column;
-    text-align: center; }
-  .btn_inicioTittle {
-    color: #2e2e2e;
-    text-decoration: none;
-    font-size: 2rem; }
-  .advertencia_concursos {
-    font-size: 1.3rem;
-    height: 2vh;
-    text-align: center; }
-  .concurso_card-uno {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw; }
-  .section_card-and-text {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-flow: column; }
-  .card-titleAnd-description {
-    width: 100vw;
-    margin-top: 25vh;
-    display: flex;
-    flex-direction: column;
-    height: fit-content; }
-  .section_flex_cards {
-    margin-top: 5vh;
-    display: flex;
-    align-content: center;
-    width: 100vw; }
-  .section_card_body {
-    display: flex;
-    width: 100vw;
     justify-content: center; }
-  .concurso_card-dos {
-    display: flex;
-    height: 100vh;
-    width: 100vw; }
-  .concurso_card-tres {
-    display: flex;
-    height: 100vh;
-    width: 100vw; }
-  .section_footer {
-    margin-top: 4vh;
+  .div-container-h1p {
+    width: 100%;
+    margin-bottom: 15vh; }
+  #h1Concurso {
+    font-size: 2.4rem;
+    font-family: 'Bebas Neue', cursive; }
+  #pConcurso {
+    padding: 0px 10px 10px 10px;
+    font-size: 1.5rem;
+    font-family: 'Nunito', sans-serif; }
+  .aButton {
+    font-size: 1.3rem;
+    color: black;
+    text-decoration: none; }
+  .container-elements-card {
+    width: 340px; }
+  .container-elements-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .card-1, .card-2, .card-3 {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 10px;
+    padding: 3px;
+    margin-top: 5vh;
+    width: min-content; }
+  .bg-card-1 {
+    padding: 2px;
+    background: #f4d352;
+    box-shadow: inset 1px 5px 16px 0px #2d240052; }
+  .bg-card-2 {
+    padding: 2px;
+    background: #fa6e6f;
+    box-shadow: inset 1px 5px 16px 0px #792e2e; }
+  .bg-card-3 {
+    padding: 2px;
+    background: #fa6e6f;
+    box-shadow: inset 1px 5px 16px 0px #792e2e; }
+  .span-top-concurso {
+    height: 20px; }
+  .footer-global {
+    height: 15vh;
     width: 100vw;
-    height: 10vh;
     display: flex;
     flex-direction: row;
-    background-color: #dee4ec6e; }
-  .img_card_Concurso {
-    opacity: 0.3; }
-  .title_inicio {
-    font-size: 3rem; }
-  .subtitle_inicio {
-    width: 35vw;
-    font-size: 1.8rem; }
-  .box-text-title {
-    font-family: 'Nunito', sans-serif;
-    margin-left: 30vw;
-    text-align: center;
-    width: 40vw; } }
+    padding: 0px 20px 0px 20px;
+    box-shadow: -1px 0px 20px #00000033; }
+  .footer-section-left {
+    width: 46vw;
+    padding-top: 15px;
+    font-size: 3.5rem;
+    display: flex;
+    flex-direction: column; }
+  .footer-section-right {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px; }
+  .section-left-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; }
+  .section-left-icons {
+    padding-top: 10px;
+    display: flex; }
+  #siguenos {
+    padding-right: 10px;
+    padding-top: 25px;
+    font-family: 'Bebas Neue', cursive; }
+  #text-footer-sup {
+    font-size: 1.8rem;
+    font-family: 'Bebas Neue', cursive; }
+  #text-footer-inf {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    font-family: 'Bebas Neue', cursive;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: 8px 13px 20px 0px #4540404d; } }
 
 /* concurso responsive END */
 /* clubptd responsive START */
@@ -10730,6 +11167,7 @@ textarea.form-control-lg {
     color: #000000;
     display: block;
     transition: 1200ms;
+    padding: 10px 20px;
     position: absolute;
     box-shadow: -8px 6px 10px #6f6f6f63;
     border-radius: 10px;
@@ -10742,7 +11180,7 @@ textarea.form-control-lg {
     opacity: 1;
     color: #000000;
     display: block;
-    padding: 0 30px;
+    padding: 10px 20px;
     line-height: 40px;
     transition: 1200ms;
     position: relative;
